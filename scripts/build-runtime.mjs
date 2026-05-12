@@ -49,9 +49,24 @@ if (!existsSync(entry)) {
 
 // Vite library build: IIFE format, no externals, no minification skip.
 // One file out, predictable filename.
+//
+// `define` substitutes `process.env.NODE_ENV` (and any other `process.env.*`
+// access) at build time so the resulting IIFE is browser-safe. React's
+// source references `process.env.NODE_ENV` for dev-mode checks; without
+// substitution, the browser throws `ReferenceError: process is not defined`
+// at the very first access. Setting it to `"production"` also routes
+// React's conditional exports to the production build.
+//
+// Values must be valid JS source — see Vite's `define` docs. We deliberately
+// substitute the dotted paths only and leave bare `process` alone to avoid
+// rewriting unrelated identifiers inside React's source.
 await build({
   configFile: false,
   root: repoRoot,
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
+    'process.env': JSON.stringify({}),
+  },
   build: {
     outDir: 'dist/runtimes/_tmp',
     emptyOutDir: true,

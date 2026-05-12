@@ -41,6 +41,15 @@ Widget bundles externalise `react`, `react-dom`, and `react-dom/client`
 at Vite-build time (see `vite.config.ts`) and resolve them to the
 matching `window.CbeyReact` keys at runtime.
 
+## Browser-safe build
+
+The build script substitutes `process.env.NODE_ENV` (and any other
+`process.env.*` access) at build time via Vite's `define` option, so the
+emitted IIFE contains no live references to a Node-only `process` global.
+This is what keeps React's dev-mode checks from throwing
+`ReferenceError: process is not defined` in the browser, and routes React
+to its production code path.
+
 ## Why a separate bundle file
 
 A standalone, content-stable bundle file is the cleanest way to

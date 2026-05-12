@@ -51,6 +51,18 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
+  // Substitute `process.env.NODE_ENV` (and any other `process.env.*` access)
+  // at build time so widget bundles are browser-safe. React itself is
+  // externalised to `window.CbeyReact`, but widget source or any non-
+  // externalised transitive dep may still reference `process.env.*`. Without
+  // this, the browser throws `ReferenceError: process is not defined`.
+  // Values must be valid JS source — `JSON.stringify('production')` yields
+  // `'"production"'`, which is what esbuild needs. We deliberately leave
+  // bare `process` alone to avoid rewriting unrelated identifiers.
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
+    'process.env': JSON.stringify({}),
+  },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
