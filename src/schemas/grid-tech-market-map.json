@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cbey.yale.edu/schemas/grid-tech-market-map.json",
+  "title": "Grid Tech Market Map config",
+  "description": "Editor-supplied configuration for the grid-tech-market-map widget. Every field is optional; widget falls back to documented defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "defaultCategory": {
+      "type": "string",
+      "description": "Category to show on first render. Must match a category id present in the widget's bundled data set.",
+      "enum": ["energy-storage", "tnd-gets"],
+      "default": "energy-storage"
+    },
+    "lockCategory": {
+      "type": "boolean",
+      "description": "When true, the category selector is hidden and only the default category renders. Useful when editors want to embed a single fixed view.",
+      "default": false
+    }
+  }
+}

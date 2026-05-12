@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "publishedAt": "2026-05-12T06:57:13.536Z",
+  "supportedRuntimes": [
+    "react18"
+  ],
+  "widgets": [
+    {
+      "id": "grid-tech-market-map",
+      "label": "Grid Tech Market Map",
+      "description": "Interactive scatter chart plotting grid-tech subcategories by ARL vs. Market Size 2030, grouped by CAGR.",
+      "version": "0.1.0",
+      "runtime": "react18",
+      "configSchema": {
+        "$ref": "schemas/grid-tech-market-map.json"
+      },
+      "deprecated": false,
+      "bundle": "dist/grid-tech-market-map/grid-tech-market-map.BZK6u33n.js",
+      "styles": "dist/grid-tech-market-map/grid-tech-market-map.p0vBe2n_.css"
+    }
+  ]
+}

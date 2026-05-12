@@ -1,0 +1,20 @@
+node_modules/
+
+# dist/ is committed because this package is consumed via Composer as
+# type: drupal-library; the install copies dist/ into the host site's
+# web/libraries/cbey-js-widgets/. Phase 2 may swap to GitHub-release
+# artefacts, at which point dist/ can be re-ignored.
+
+# Vite library-build intermediate. build-runtime.mjs writes its output
+# here before copying the final artefact into dist/runtimes/. Not part
+# of the shipped package.
+dist/runtimes/_tmp/
+
+.DS_Store
+.vscode/
+.idea/
+*.log
+coverage/
+.eslintcache
+.vite/
+.cache/

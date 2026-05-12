@@ -1,0 +1,73 @@
+/**
+ * Shared `:host`-scoped reset and design tokens for catalog widgets.
+ *
+ * Loaded by individual widget styles via `@import '../../runtimes/tailwind-base.css';`
+ * before their `@tailwind` directives. Every widget renders inside a shadow
+ * root; the `:host` selector lets the host element's custom-property tree
+ * carry the entire token set without touching the page's :root.
+ *
+ * Tokens are HSL-triplet ("210 20% 98%") rather than full hsl() calls so
+ * Tailwind utilities can drop them into `hsl(var(--cbey-…))` with the
+ * required alpha-percentage syntax when needed. Names are prefixed with
+ * --cbey- to match the Tailwind class prefix and avoid colliding with any
+ * stray light-DOM token a future page-level stylesheet might define.
+ */
+
+:host {
+  /* Sizing + layout */
+  --cbey-radius: 0.75rem;
+
+  /* Surface */
+  --cbey-background: 210 20% 98%;
+  --cbey-foreground: 215 25% 15%;
+  --cbey-card: 0 0% 100%;
+  --cbey-card-foreground: 215 25% 15%;
+
+  /* Interaction */
+  --cbey-primary: 200 95% 35%;
+  --cbey-primary-foreground: 0 0% 100%;
+  --cbey-secondary: 210 15% 92%;
+  --cbey-secondary-foreground: 215 25% 15%;
+  --cbey-muted: 210 15% 95%;
+  --cbey-muted-foreground: 215 15% 45%;
+  --cbey-accent: 175 60% 45%;
+  --cbey-accent-foreground: 0 0% 100%;
+
+  /* Structure */
+  --cbey-border: 210 20% 88%;
+  --cbey-input: 210 20% 88%;
+  --cbey-ring: 200 95% 35%;
+
+  display: block;
+  width: 100%;
+  color: hsl(var(--cbey-foreground));
+  background: transparent;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+:host([data-theme="dark"]),
+:host(.dark) {
+  --cbey-background: 215 30% 8%;
+  --cbey-foreground: 210 20% 95%;
+  --cbey-card: 215 25% 12%;
+  --cbey-card-foreground: 210 20% 95%;
+  --cbey-primary: 200 95% 45%;
+  --cbey-primary-foreground: 0 0% 100%;
+  --cbey-secondary: 215 20% 18%;
+  --cbey-secondary-foreground: 210 20% 95%;
+  --cbey-muted: 215 20% 18%;
+  --cbey-muted-foreground: 215 15% 60%;
+  --cbey-accent: 175 60% 45%;
+  --cbey-accent-foreground: 0 0% 100%;
+  --cbey-border: 215 20% 20%;
+  --cbey-input: 215 20% 20%;
+  --cbey-ring: 200 95% 45%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-color: hsl(var(--cbey-border));
+}

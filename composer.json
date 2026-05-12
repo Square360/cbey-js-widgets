@@ -1,0 +1,8 @@
+{
+  "name": "square360/cbey-js-widgets",
+  "description": "Built bundles + manifest for the CBEY js_widget paragraph catalog. Consumed by cbey-d8 via composer; the dist/ directory is what gets installed.",
+  "type": "drupal-library",
+  "license": "proprietary",
+  "homepage": "https://github.com/Square360/cbey-js-widgets",
+  "require": {}
+}
