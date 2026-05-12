@@ -25,6 +25,7 @@
  *     future widget revision that adds transitions.
  */
 import { useId, useMemo, useState } from 'react';
+import { createRoot } from 'react-dom/client';
 import { gridTechData, Y_AXIS_OVERRIDES } from './data/gridTechData';
 import MarketMap from './MarketMap';
 import './styles.css';
@@ -213,19 +214,9 @@ const mount = (
   _shadowRoot: ShadowRoot,
   config: GridTechMarketMapConfig,
 ): (() => void) => {
-  // React + createRoot come from the shared runtime exposed on
-  // window.CbeyReact. Vite externalises the import; this line resolves to
-  // window.CbeyReact.createRoot at runtime.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const createRoot = (window as any).CbeyReact?.createRoot;
-  if (typeof createRoot !== 'function') {
-    // Defence-in-depth: the loader's runtime gate should catch this first.
-    // eslint-disable-next-line no-console
-    console.warn(
-      '[grid-tech-market-map] window.CbeyReact.createRoot missing; cannot mount.',
-    );
-    return () => {};
-  }
+  // React and ReactDOM are bundled into this widget (self-contained v1).
+  // Phase 2 may switch to import maps + a shared runtime; for now each
+  // widget ships its own copy.
   const root = createRoot(shadowHost);
   root.render(<GridTechMarketMapWidget config={config} />);
   return () => {

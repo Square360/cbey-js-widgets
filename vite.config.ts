@@ -7,9 +7,12 @@ import { readdirSync, statSync, existsSync } from 'node:fs';
  * Multi-entry build configuration for the widget catalog.
  *
  * Every directory under src/widgets/ that contains an index.tsx becomes
- * a build entry. React + ReactDOM are externalised — widgets pull them
- * from `window.CbeyReact` at runtime, served by the react18 shared
- * library in Drupal.
+ * a build entry.
+ *
+ * React + ReactDOM are BUNDLED into each widget bundle for v1 (not
+ * externalised). Phase 2 can introduce import-map-based sharing when
+ * multiple React widgets coexist on a page and bandwidth matters.
+ * For now, each widget is self-contained: one React per widget bundle.
  *
  * Output layout:
  *   dist/{widget-id}/{widget-id}.{contentHash}.js
@@ -52,11 +55,11 @@ export default defineConfig({
     },
   },
   // Substitute `process.env.NODE_ENV` (and any other `process.env.*` access)
-  // at build time so widget bundles are browser-safe. React itself is
-  // externalised to `window.CbeyReact`, but widget source or any non-
-  // externalised transitive dep may still reference `process.env.*`. Without
-  // this, the browser throws `ReferenceError: process is not defined`.
-  // Values must be valid JS source — `JSON.stringify('production')` yields
+  // at build time so widget bundles are browser-safe. React is bundled
+  // into each widget for v1 (see top-of-file note), so React's own
+  // `process.env.NODE_ENV` checks also need this substitution — otherwise
+  // the browser throws `ReferenceError: process is not defined`. Values
+  // must be valid JSON for esbuild — `JSON.stringify('production')` yields
   // `'"production"'`, which is what esbuild needs. We deliberately leave
   // bare `process` alone to avoid rewriting unrelated identifiers.
   define: {
@@ -69,10 +72,6 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       input: discoverWidgetEntries(),
-      // Externalise React and rewrite imports to the shared global at
-      // runtime. Widget bundles emit `window.CbeyReact.React` etc. instead
-      // of bundling their own React copy.
-      external: ['react', 'react-dom', 'react-dom/client'],
       output: {
         format: 'es',
         entryFileNames: '[name]/[name].[hash].js',
@@ -85,16 +84,6 @@ export default defineConfig({
             return `${widgetId}/${widgetId}.[hash][extname]`;
           }
           return 'assets/[name].[hash][extname]';
-        },
-        globals: {
-          react: 'CbeyReact.React',
-          'react-dom': 'CbeyReact.ReactDOM',
-          'react-dom/client': 'CbeyReact',
-        },
-        paths: {
-          react: 'window.CbeyReact.React',
-          'react-dom': 'window.CbeyReact.ReactDOM',
-          'react-dom/client': 'window.CbeyReact',
         },
       },
     },
