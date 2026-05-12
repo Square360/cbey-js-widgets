@@ -72,6 +72,11 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       input: discoverWidgetEntries(),
+      // Preserve each entry file's exports — Vite's default treats this as
+      // an app build and tree-shakes unused exports. Our widgets export a
+      // default `mount` function that's consumed externally by the Drupal
+      // loader's dynamic import(), so Rollup must keep that export shape.
+      preserveEntrySignatures: 'exports-only',
       output: {
         format: 'es',
         entryFileNames: '[name]/[name].[hash].js',

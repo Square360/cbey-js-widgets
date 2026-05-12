@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-05-12T07:56:48.458Z",
+  "publishedAt": "2026-05-12T13:08:58.384Z",
   "supportedRuntimes": [
     "react18"
   ],
@@ -15,7 +15,7 @@
         "$ref": "schemas/grid-tech-market-map.json"
       },
       "deprecated": false,
-      "bundle": "dist/grid-tech-market-map/grid-tech-market-map.DtlkoMGN.js",
+      "bundle": "dist/grid-tech-market-map/grid-tech-market-map.DYFDnNxS.js",
       "styles": "dist/grid-tech-market-map/grid-tech-market-map.p0vBe2n_.css"
     }
   ]
