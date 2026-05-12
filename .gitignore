@@ -18,3 +18,7 @@ coverage/
 .eslintcache
 .vite/
 .cache/
+
+# Intake source dirs (Lovable refactors, etc.) live alongside the catalog
+# source but are never shipped. One subdir per delivery, date-prefixed.
+_intake/

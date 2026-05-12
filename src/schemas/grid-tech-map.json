@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cbey.yale.edu/schemas/grid-tech-map.json",
+  "title": "Grid Tech Map (v2) config",
+  "description": "Editor-supplied configuration for the grid-tech-map widget (v2; replaces grid-tech-market-map). Every field is optional; widget falls back to documented defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "initialCategoryId": {
+      "type": "string",
+      "description": "Category id to show on first render. Must match an id present in the widget's bundled dataset (or the editor-supplied `categories` override).",
+      "default": "energy-storage"
+    },
+    "hideCategorySelector": {
+      "type": "boolean",
+      "description": "When true, the category `<select>` is hidden and only the initial category renders. Useful for single-category embeds.",
+      "default": false
+    },
+    "categories": {
+      "type": "array",
+      "description": "Override the bundled dataset entirely. Each entry must be a Category object with id, name, optional yAxisMax, and a subCategories array.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "subCategories"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable category identifier."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name shown in the selector and as the chart heading."
+          },
+          "yAxisMax": {
+            "type": "number",
+            "description": "Optional fixed Y-axis ceiling. Falls back to a computed value when omitted."
+          },
+          "subCategories": {
+            "type": "array",
+            "description": "Plottable rows for this category.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "arl", "marketSize2025", "marketSize2030", "cagr"],
+              "properties": {
+                "name": { "type": "string", "description": "Technology name; also the key into labelPositions." },
+                "arl": { "type": "number", "description": "Adoption Readiness Level (typically 3-9)." },
+                "marketSize2025": { "type": "number", "description": "Market size in 2025 (USD billions)." },
+                "marketSize2030": { "type": "number", "description": "Projected market size in 2030 (USD billions)." },
+                "cagr": { "type": "number", "description": "Compound Annual Growth Rate, percent." }
+              }
+            }
+          }
+        }
+      }
+    },
+    "labelPositions": {
+      "type": "object",
+      "description": "Per-tech-name label-placement override. Keys are technology names; values are one of left, right, top, bottom, top-right.",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["left", "right", "top", "bottom", "top-right"]
+      }
+    },
+    "colors": {
+      "type": "object",
+      "description": "Override the default CAGR-bucket palette. Hex strings. Editors who supply an override own the contrast budget; the catalog default ships an AA-audited palette.",
+      "additionalProperties": false,
+      "properties": {
+        "low": {
+          "type": "string",
+          "description": "Colour for the low-CAGR bucket (CAGR < 10%).",
+          "default": "#3B82F6"
+        },
+        "medium": {
+          "type": "string",
+          "description": "Colour for the medium-CAGR bucket (CAGR 10-20%).",
+          "default": "#B45309"
+        },
+        "high": {
+          "type": "string",
+          "description": "Colour for the high-CAGR bucket (CAGR > 20%).",
+          "default": "#15803D"
+        }
+      }
+    }
+  }
+}

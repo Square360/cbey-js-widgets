@@ -1,0 +1,56 @@
+/**
+ * Stylesheet for the investment-thesis-table widget.
+ *
+ * Imports the shared `:host`-scoped reset (design tokens, box model,
+ * border-color) and runs Tailwind's three layers — same pattern as the
+ * other catalog widgets. The widget's bespoke chrome is inline-styled
+ * with component-root CSS variables (`--itt-*`); the classes below
+ * cover only the accessibility helpers that need real stylesheet rules
+ * (visually-hidden caption, focus-visible, reduced-motion).
+ *
+ * Anything written outside the tailwind layers must use `:host`-scoped
+ * tokens, never `:root`. The catalog's intake recipe (step 5) is the
+ * enforcement point.
+ */
+@import '../../runtimes/tailwind-base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Visually-hidden helper for the screen-reader caption. */
+.cbey-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Native select focus ring — restated with the runtime ring token. */
+.cbey-investment-thesis-table select:focus-visible {
+  outline: 2px solid hsl(var(--cbey-ring));
+  outline-offset: 2px;
+}
+
+/* Focusable scroll region around the summary table. The table can
+ * overflow horizontally on narrow viewports; tabIndex={0} + a visible
+ * focus ring makes the scroll container reachable for sighted keyboard
+ * users (WCAG 2.1.1 Level A). */
+.cbey-investment-thesis-table__scroll:focus-visible {
+  outline: 2px solid hsl(var(--cbey-ring));
+  outline-offset: 2px;
+}
+
+/* Reduced-motion guard. No animations today, but declared so any
+ * future addition inherits the override. */
+@media (prefers-reduced-motion: reduce) {
+  .cbey-investment-thesis-table * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}

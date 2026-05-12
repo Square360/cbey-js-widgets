@@ -29,6 +29,16 @@ them pre-trim the export at source. Trimmed exports cut about half the
 intake time, but they don't replace the formal recipe — every step
 below still runs.
 
+**For Lovable.dev specifically**, send the canonical prompt in
+[`intake-prompt-lovable.md`](./intake-prompt-lovable.md) verbatim. That
+prompt has been tuned across multiple batches and produces a folder
+shape (`src/widgets/{widget-id}/` with `index.tsx`, `data.ts`, and
+`README.md`) that maps 1:1 onto step 3 below. The 2026-05-12 intake
+(`power-vista-plot`, three widgets) was the first batch where the
+shape landed correctly enough to skip almost all of step 4's
+page-shell stripping; the prompt is now the standing default for any
+new Lovable batch.
+
 ## Step 1 — Isolation pre-check
 
 Look at the export. Answer one question:

@@ -51,6 +51,12 @@ export interface PublishedManifest {
 /**
  * Active catalog. Append a new entry per widget. The build step backfills
  * `bundle` and `styles` from the rollup output, so leave them unset here.
+ *
+ * v0.2.0 (2026-05-12): adds three widgets from the power-vista-plot
+ * intake and deprecates grid-tech-market-map in favour of grid-tech-map.
+ * The deprecated widget keeps a manifest entry so existing paragraphs
+ * still resolve a bundle; Drupal's WidgetCatalogService::getWidgetOptions()
+ * filters deprecated entries out of the editor picker.
  */
 export const widgets: WidgetManifestEntry[] = [
   {
@@ -58,9 +64,39 @@ export const widgets: WidgetManifestEntry[] = [
     label: 'Grid Tech Market Map',
     description:
       'Interactive scatter chart plotting grid-tech subcategories by ARL vs. Market Size 2030, grouped by CAGR.',
-    version: '0.1.0',
+    version: '0.1.3',
     runtime: 'react18',
     configSchema: { $ref: 'schemas/grid-tech-market-map.json' },
+    deprecated: true,
+  },
+  {
+    id: 'grid-tech-map',
+    label: 'Grid Tech Map (v2)',
+    description:
+      'Interactive scatter chart plotting grid-tech subcategories by ARL vs. Market Size 2030, with CAGR shape/colour encoding and editor-overridable dataset, label positions, and colour palette.',
+    version: '1.0.0',
+    runtime: 'react18',
+    configSchema: { $ref: 'schemas/grid-tech-map.json' },
+    deprecated: false,
+  },
+  {
+    id: 'investment-thesis-table',
+    label: 'Investment Thesis Table',
+    description:
+      'Per-technology investment-thesis matrix and long-form thesis cards, with a category selector to switch between top-level domains.',
+    version: '1.0.0',
+    runtime: 'react18',
+    configSchema: { $ref: 'schemas/investment-thesis-table.json' },
+    deprecated: false,
+  },
+  {
+    id: 'energy-storage-comparison-table',
+    label: 'Energy Storage Comparison Table',
+    description:
+      'Static comparison table showing how each emerging energy-storage technology compares to lithium-ion at its peak suitability duration.',
+    version: '1.0.0',
+    runtime: 'react18',
+    configSchema: { $ref: 'schemas/energy-storage-comparison-table.json' },
     deprecated: false,
   },
 ];

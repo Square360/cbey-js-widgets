@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cbey.yale.edu/schemas/investment-thesis-table.json",
+  "title": "Investment Thesis Table config",
+  "description": "Editor-supplied configuration for the investment-thesis-table widget. Every field is optional; widget falls back to documented defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "initialCategoryId": {
+      "type": "string",
+      "description": "Category id to show on first render. Must match a `categoryId` present in `thesisData` (or the bundled default dataset).",
+      "default": "energy-storage"
+    },
+    "hideCategorySelector": {
+      "type": "boolean",
+      "description": "When true, the category `<select>` is hidden and only the initial category renders.",
+      "default": false
+    },
+    "thesisData": {
+      "type": "array",
+      "description": "Override the bundled per-tech thesis content.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["categoryId", "categoryName", "technologies"],
+        "properties": {
+          "categoryId": {
+            "type": "string",
+            "description": "Stable category identifier."
+          },
+          "categoryName": {
+            "type": "string",
+            "description": "Display name shown in the selector."
+          },
+          "technologies": {
+            "type": "array",
+            "description": "Per-technology thesis entries.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "earlyStage", "lateStage"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Technology name. Also used as the key into signalMap. Include the ARL marker if you want signal-map joins to work against the catalog default signalMap."
+                },
+                "earlyStage": {
+                  "type": "string",
+                  "description": "Long-form early-stage thesis prose."
+                },
+                "lateStage": {
+                  "type": "string",
+                  "description": "Long-form late-stage thesis prose."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "signalMap": {
+      "type": "object",
+      "description": "Override the bundled per-tech signal/summary map. Keys match `technologies[].name` exactly.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["earlyStage", "lateStage"],
+        "properties": {
+          "earlyStage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["signals", "summary"],
+            "properties": {
+              "signals": {
+                "type": "array",
+                "description": "Badge entries: an emoji + a short label per badge.",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["emoji", "label"],
+                  "properties": {
+                    "emoji": {
+                      "type": "string",
+                      "description": "Decorative emoji glyph; marked aria-hidden in render."
+                    },
+                    "label": {
+                      "type": "string",
+                      "description": "Short label text (the announced part)."
+                    }
+                  }
+                }
+              },
+              "summary": {
+                "type": "string",
+                "description": "One-paragraph summary of the early-stage thesis signal set."
+              }
+            }
+          },
+          "lateStage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["signals", "summary"],
+            "properties": {
+              "signals": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["emoji", "label"],
+                  "properties": {
+                    "emoji": { "type": "string" },
+                    "label": { "type": "string" }
+                  }
+                }
+              },
+              "summary": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

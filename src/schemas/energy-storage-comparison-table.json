@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cbey.yale.edu/schemas/energy-storage-comparison-table.json",
+  "title": "Energy Storage Comparison Table config",
+  "description": "Editor-supplied configuration for the energy-storage-comparison-table widget. Every field is optional; widget falls back to documented defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Visible <h3> heading at the top of the widget.",
+      "default": "Technology Cost Comparison vs. Li-Ion"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Visible <p> subtitle directly below the heading.",
+      "default": "How each energy storage technology compares to lithium-ion at its peak suitability duration."
+    },
+    "rows": {
+      "type": "array",
+      "description": "Override the bundled comparison rows.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["technology", "peakSuitability", "liIonCost", "techCost", "vsLiIon", "keyAdvantage"],
+        "properties": {
+          "technology": {
+            "type": "string",
+            "description": "Technology name (first column / row header)."
+          },
+          "peakSuitability": {
+            "type": "string",
+            "description": "Duration band where this technology is most cost-effective."
+          },
+          "liIonCost": {
+            "type": "string",
+            "description": "Lithium-ion cost at the same duration."
+          },
+          "techCost": {
+            "type": "string",
+            "description": "This technology's cost at its peak suitability duration."
+          },
+          "vsLiIon": {
+            "type": "string",
+            "description": "Cost ratio vs. lithium-ion at the same duration."
+          },
+          "keyAdvantage": {
+            "type": "string",
+            "description": "Free-text summary of the technology's key advantage at this duration."
+          }
+        }
+      }
+    }
+  }
+}
