@@ -46,7 +46,7 @@ export const defaultThesisData: CategoryThesis[] = [
     technologies: [
       {
         name: 'Thermal Energy Storage (ARL 8)',
-        earlyStage: "High ARL implies the category itself is already de-risked at a system level. Early-stage investors should assume incumbents and scaled players have a strong first-mover advantage in utility procurement and EPC relationships. Early-stage capital should only back companies with structural differentiation—for example, materially lower LCOS at >10 hour durations, modular designs that reduce siting or permitting friction, or integration advantages with industrial heat or CHP. Incremental improvements are unlikely to survive against scaled players.",
+        earlyStage: "High ARL implies the category itself is already de-risked at a system level. Early-stage investors should assume incumbents and scaled players have a strong first-mover advantage in utility procurement and EPC relationships. Early-stage capital should only back companies with structural differentiation; for example, materially lower LCOS at >10 hour durations, modular designs that reduce siting or permitting friction, or integration advantages with industrial heat or CHP. Incremental improvements are unlikely to survive against scaled players.",
         lateStage: "High ARL makes this a traction-driven category. Late-stage investors should expect multi-project pipelines, repeat utility customers, and demonstrated bankability. Diligence should focus on execution metrics: cost-down trajectory, EPC scalability, project cycle time, and balance-sheet readiness for project finance. Weak traction in a high-ARL category is a red flag rather than a timing issue."
       },
       {
@@ -56,7 +56,7 @@ export const defaultThesisData: CategoryThesis[] = [
       },
       {
         name: 'Zinc-based Batteries (ARL 7)',
-        earlyStage: "Upper-mid ARL suggests growing adoption but incomplete market lock-in. Pre-seed to Series A investors should back companies that clearly outperform lithium-ion on safety, cycle life, or total cost of ownership, especially in dense urban or fire-restricted deployments. Chemistry or form-factor advantages must translate directly into deployment wins, not just lab performance.",
+        earlyStage: "Upper-mid ARL suggests growing adoption but incomplete market lock-in. Pre-seed to Series A investors should back companies that clearly outperform lithium-ion on safety, cycle life, or total cost of ownership; especially in dense urban or fire-restricted deployments. Chemistry or form-factor advantages must translate directly into deployment wins, not just lab performance.",
         lateStage: "For Series B–D, the focus should be on proof of displacement; evidence that zinc systems are replacing Li-ion in safety-critical or regulation-constrained markets. Investors should expect commercial pilots, regulatory pull, and improving gross margins. Defensibility against declining Li-ion prices is essential for underwriting long-term returns."
       },
       {
@@ -71,12 +71,12 @@ export const defaultThesisData: CategoryThesis[] = [
       },
       {
         name: 'Iron-Air Batteries (ARL 6)',
-        earlyStage: "Mid-ARL makes iron-air a classic timing-sensitive early-stage bet. Early-stage investors should either back companies very early (pre-seed, seed)—where ARL improvement is expected before commercialization—or avoid the category entirely. Key diligence focus: ability to simplify system architecture, reduce footprint, and improve project deployability. Betting assumes company will capitalize on 20%+ CAGR and that category-level ARL will rise before the company reaches its first scale inflection.",
+        earlyStage: "Mid-ARL makes iron-air a classic timing-sensitive early-stage bet. Early-stage investors should either back companies very early (pre-seed, seed), where ARL improvement is expected before commercialization, or avoid the category entirely. Key diligence focus: ability to simplify system architecture, reduce footprint, and improve project deployability. Betting assumes company will capitalize on 20%+ CAGR and that category-level ARL will rise before the company reaches its first scale inflection.",
         lateStage: "Late-stage capital should only enter post–valley of death. Companies must demonstrate first-of-a-kind deployments, reliability data, and credible long-term offtake or capacity contracts. Late-stage investors should underwrite iron-air as a grid reliability asset, not an energy arbitrage play, and avoid funding companies still proving basic bankability. If a company checking all these points has crossed valley of death, it's an excellent opportunity in a highly growing market."
       },
       {
         name: 'Hydrogen Storage (ARL 5)',
-        earlyStage: "Low ARL combined with very large market size makes hydrogen storage option-value driven rather than core-portfolio worthy at early stage. Early-stage VC should be patient but opportunistic, selectively spotting and backing technologies that can independently raise adoption readiness—e.g., materially improving round-trip efficiency, modularizing storage, or reducing dependence on bespoke infrastructure. A right bet might be a right entry into a large market at a right time.",
+        earlyStage: "Low ARL combined with very large market size makes hydrogen storage option-value driven rather than core-portfolio worthy at early stage. Early-stage VC should be patient but opportunistic, selectively spotting and backing technologies that can independently raise adoption readiness, e.g., materially improving round-trip efficiency, modularizing storage, or reducing dependence on bespoke infrastructure. A right bet might be a right entry into a large market at a right time.",
         lateStage: "Late-stage investment is appropriate only under exceptional circumstances: contracted offtake, government-backed infrastructure, or integration with existing industrial hydrogen demand. Capital intensity and infrastructure coupling mean that most hydrogen storage companies remain unsuitable for conventional growth equity without external risk absorption (policy, sovereigns, or balance-sheet sponsors)."
       }
     ]
@@ -87,7 +87,7 @@ export const defaultThesisData: CategoryThesis[] = [
     technologies: [
       {
         name: 'Advanced Conductors (HTLS) (ARL 9)',
-        earlyStage: "Keep the \"incumbent advantage\" lens, but adjust for market timing. The upgrade cycle is long, but the replacement wave (aging grid, reconductoring push, permitting constraints) creates real whitespace even at high ARL. Early-stage VC can back entrants that are better timed and slightly better on metrics utilities care about in a once-per-cycle decision: ampacity uplift per dollar, sag/thermal behavior, install speed, reliability, and warranty profile. You do not need a chemistry breakthrough. You need a product that makes procurement feel low-regret. Also prioritize entrants with channel strategy (EPCs, utilities, OEM bundles) because distribution is the moat here.",
+        earlyStage: "Keep the \"incumbent advantage\" lens, but adjust for market timing. The upgrade cycle is long, but the replacement wave (aging grid, reconductoring push, permitting constraints) creates real whitespace even at high ARL. Early-stage VC can back entrants that are better timed and slightly better on metrics utilities care about in a once-per-cycle decision: ampacity uplift per dollar, sag/thermal behavior, install speed, reliability, and warranty profile. More than a chemistry breakthrough, seek low-regret procurement. Prioritize channel strategy (EPCs, utilities, OEM bundles) because distribution is the moat here.",
         lateStage: "Not only \"scale what works\", but \"own the cycle\". Late-stage investors should underwrite companies that have converted the market pull into backlog across multiple utilities and regions. Because this is a long-cycle, large market, low-CAGR category, traction should show up as multi-year framework agreements, repeat reconductoring programs, or preferred vendor status. Diligence should emphasize manufacturing throughput, quality yields, install partner coverage, and working-capital discipline. A high-ARL category still punishes weak commercial execution, but it also rewards entrants that land at the right moment in the replacement supercycle."
       },
       {
@@ -149,7 +149,7 @@ export const defaultSignalMap: Record<string, TechSignals> = {
     lateStage: { signals: [{ emoji: '🏛️', label: 'Needs external risk absorption' }, { emoji: '⚠️', label: 'Exceptional circumstances only' }], summary: 'Appropriate only with contracted offtake, government backing, or industrial hydrogen demand integration. Capital intensity makes most unsuitable for growth equity.' }
   },
   'Advanced Conductors (HTLS) (ARL 9)': {
-    earlyStage: { signals: [{ emoji: '🔄', label: 'Replacement supercycle' }, { emoji: '🤝', label: 'Channel strategy is moat' }], summary: "Upgrade cycle creates whitespace even at high ARL. Don't need chemistry breakthrough—need low-regret procurement. Prioritize channel strategy (EPCs, utilities, OEM bundles)." },
+    earlyStage: { signals: [{ emoji: '🔄', label: 'Replacement supercycle' }, { emoji: '🤝', label: 'Channel strategy is moat' }], summary: 'Upgrade cycle creates whitespace even at high ARL. More than a chemistry breakthrough, seek low-regret procurement. Prioritize channel strategy (EPCs, utilities, OEM bundles).' },
     lateStage: { signals: [{ emoji: '💰', label: 'Underwrite with confidence' }, { emoji: '📋', label: 'Own the cycle' }], summary: 'Expect multi-year framework agreements, repeat programs, preferred vendor status. Diligence: manufacturing throughput, quality yields, install partner coverage.' }
   },
   'Dynamic Line Ratings (DLR) (ARL 7)': {

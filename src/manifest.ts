@@ -57,6 +57,11 @@ export interface PublishedManifest {
  * The deprecated widget keeps a manifest entry so existing paragraphs
  * still resolve a bundle; Drupal's WidgetCatalogService::getWidgetOptions()
  * filters deprecated entries out of the editor picker.
+ *
+ * v0.2.1 (2026-06-17): data refresh from economist's v2 full export.
+ * energy-storage-comparison-table: updated cost figures, added Li-Ion Cost
+ * Structure footnote table. investment-thesis-table: minor copy/punctuation
+ * alignment. grid-tech-map: data unchanged.
  */
 export const widgets: WidgetManifestEntry[] = [
   {
@@ -84,7 +89,7 @@ export const widgets: WidgetManifestEntry[] = [
     label: 'Investment Thesis Table',
     description:
       'Per-technology investment-thesis matrix and long-form thesis cards, with a category selector to switch between top-level domains.',
-    version: '1.0.0',
+    version: '1.0.1',
     runtime: 'react18',
     configSchema: { $ref: 'schemas/investment-thesis-table.json' },
     deprecated: false,
@@ -94,7 +99,7 @@ export const widgets: WidgetManifestEntry[] = [
     label: 'Energy Storage Comparison Table',
     description:
       'Static comparison table showing how each emerging energy-storage technology compares to lithium-ion at its peak suitability duration.',
-    version: '1.0.0',
+    version: '1.0.1',
     runtime: 'react18',
     configSchema: { $ref: 'schemas/energy-storage-comparison-table.json' },
     deprecated: false,

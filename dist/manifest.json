@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-05-12T16:39:32.471Z",
+  "publishedAt": "2026-06-17T09:23:52.189Z",
   "supportedRuntimes": [
     "react18"
   ],
@@ -35,26 +35,26 @@
       "id": "investment-thesis-table",
       "label": "Investment Thesis Table",
       "description": "Per-technology investment-thesis matrix and long-form thesis cards, with a category selector to switch between top-level domains.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtime": "react18",
       "configSchema": {
         "$ref": "schemas/investment-thesis-table.json"
       },
       "deprecated": false,
-      "bundle": "dist/investment-thesis-table/investment-thesis-table.BHg-zvbb.js",
+      "bundle": "dist/investment-thesis-table/investment-thesis-table.BOZq311t.js",
       "styles": "dist/investment-thesis-table/investment-thesis-table.CJNn1cfH.css"
     },
     {
       "id": "energy-storage-comparison-table",
       "label": "Energy Storage Comparison Table",
       "description": "Static comparison table showing how each emerging energy-storage technology compares to lithium-ion at its peak suitability duration.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtime": "react18",
       "configSchema": {
         "$ref": "schemas/energy-storage-comparison-table.json"
       },
       "deprecated": false,
-      "bundle": "dist/energy-storage-comparison-table/energy-storage-comparison-table.Bri8-6pI.js",
+      "bundle": "dist/energy-storage-comparison-table/energy-storage-comparison-table.DlWvH6ZT.js",
       "styles": "dist/energy-storage-comparison-table/energy-storage-comparison-table.Ct5zsGBE.css"
     }
   ]
