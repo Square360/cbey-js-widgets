@@ -25,6 +25,14 @@ import { createRoot } from 'react-dom/client';
 import { defaultEnergyStorageComparisons, type TechComparison } from './data';
 import './styles.css';
 
+const costStructure = [
+  { level: 'Cell-level', components: 'Cathode, anode, electrolyte, separator' },
+  { level: 'Pack/Enclosure-level', components: 'Cells + [BMS (Battery Management System), cooling/HVAC, housing/enclosure, assembly/BoP (Balance of Pack)]' },
+  { level: 'Core equipment-level', components: 'Enclosures + [PCS (Power Conversion System: DC-AC inverter), EMS (Energy Management System: optimization/scheduling)]' },
+  { level: 'System-level', components: 'Core equipment + [installation/civils, EPC, grid connection/EBOS/SBOS]' },
+  { level: 'LCOS', components: 'System + [Opex, accounting for roundtrip efficiency, lifetime energy output]' },
+];
+
 export interface EnergyStorageComparisonTableConfig {
   /** Override the bundled comparison rows. */
   rows?: TechComparison[];
@@ -126,6 +134,47 @@ const EnergyStorageComparisonTableWidget = ({ config }: WidgetProps) => {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Li-Ion Cost Structure footnote */}
+        <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid var(--esct-border)' }}>
+          <p
+            style={{
+              fontSize: 11,
+              fontWeight: 600,
+              color: 'var(--esct-fg)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.06em',
+              margin: 0,
+              marginBottom: 12,
+            }}
+          >
+            Typical Li-Ion Battery Cost Structure and Components
+          </p>
+          <div
+            style={{
+              border: '1px solid var(--esct-border)',
+              borderRadius: 10,
+              overflowX: 'auto',
+            }}
+          >
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr>
+                  <th scope="col" style={{ ...headStyle, fontSize: 12, width: 180 }}>Cost Level</th>
+                  <th scope="col" style={{ ...headStyle, fontSize: 12 }}>Key Components</th>
+                </tr>
+              </thead>
+              <tbody>
+                {costStructure.map((row, i) => (
+                  <tr key={i}>
+                    <th scope="row" style={{ ...cellStyle, fontSize: 12, fontWeight: 500 }}>{row.level}</th>
+                    <td style={{ ...cellStyle, fontSize: 12, color: 'var(--esct-muted)' }}>{row.components}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
