@@ -1,0 +1,34 @@
+# Dependabot configuration.
+#
+# Deliberately quiet. Routine version bumps are handled in scheduled
+# maintenance passes, not as a stream of individual PRs — so version-update
+# PRs are switched off and security updates are left on.
+#
+# NOTE: this file controls dependabot's PULL REQUESTS. It does not control
+# the alerts in the Security tab or the repository banner; those come from
+# the advisory database and are dismissed individually, with a reason.
+#
+# Most advisories on this repository are for the build toolchain (vite,
+# vitest, postcss, js-yaml). None of that ships — the only packages whose
+# code reaches a browser are the production dependencies, and CI gates those
+# with `npm audit --omit=dev`.
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    # 0 disables routine version-update PRs. Dependabot SECURITY updates are
+    # configured in repository settings and are not affected by this limit.
+    open-pull-requests-limit: 0
+    # Pinned on purpose — add entries here rather than using
+    # `@dependabot ignore …` on a PR. Comment-based ignores live in hidden
+    # GitHub state that nobody can audit from the repository later.
+    ignore: []
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
