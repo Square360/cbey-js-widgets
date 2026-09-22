@@ -9,6 +9,40 @@ You are a frontend engineer (or Pixel) porting a freshly-arrived static HTML pag
 into the catalog as a new Svelte widget. The source is self-contained — markup, CSS, data,
 and logic in one file, no build artefact, no missing pieces to obtain from the client.
 
+## Before anything else — the supplied source is untrusted input
+
+This pipeline exists precisely so client material is *processed* rather than uploaded blind to
+the site. That protection only holds if the material is treated as untrusted on the way in,
+including on your own machine.
+
+The build toolchain's known weaknesses are almost all "attacker supplies input to the build":
+`postcss` reading arbitrary `.map` files via a crafted `sourceMappingURL`, `browserslist`
+crashing or writing to a prototype from a hostile `browserslist-stats.json`, `js-yaml` burning
+CPU on crafted merge keys. None of these matter when every input comes from the team. All of
+them matter the moment a zip arrives from a faculty member, an agency or a vendor — and that is
+the normal case here. The career explorer arrived as an HTML file from the content owner; the
+next one may arrive as a repository.
+
+**So, before the source touches a build:**
+
+- **Read it.** Every file, including the ones you did not expect. A single-file HTML page is
+  quick to read end to end; a supplied repository needs the same scrutiny applied to its
+  config, not just its components.
+- **Never run a supplied `npm install`, `postinstall`, or build script.** Lifecycle scripts run
+  arbitrary code with your credentials, your SSH agent and your cloud sessions. Take the source
+  files into *this* package and build them with *this* toolchain. Do not adopt theirs.
+- **Do not copy a supplied `package.json`, lockfile, `vite.config`, `postcss.config`,
+  `.browserslistrc` or `browserslist-stats.json`.** Take components, styles and data. Leave
+  build configuration behind — you are rebuilding it here anyway.
+- **Strip `sourceMappingURL` comments and any `.map` files** from supplied assets.
+- **Treat supplied data as hostile**, not merely as data. It is going through escaping and
+  scheme checks (Step 10) because it ends up on a public page.
+- **If something must be executed to be understood** — a minified bundle, an obfuscated asset,
+  a binary — that is a reason to go back to the content owner for the source, not a reason to
+  run it.
+
+If a supplied artefact cannot be read and understood, it does not go in the build.
+
 ## Step 0 — Pre-scope with the content owner
 
 Before intake, clarify scope:
