@@ -1,0 +1,3652 @@
+{
+  "alumni": {
+    "Becca Miller Rose": {
+      "name": "Becca Miller Rose",
+      "role": "Chief Operating Officer",
+      "org": "Welbehealth",
+      "degree": "MBA",
+      "year": "'13",
+      "desc": "Becca Rose is a seasoned healthcare operations leader, most recently serving as COO of the Optum Home-Based Medical Care business. Rose oversaw tremendous growth in the organization’s scalable national service capacity for senior populations.",
+      "linkedin": "https://www.linkedin.com/in/becca-miller-rose-005a8b11/",
+      "cats": [
+        "Health"
+      ],
+      "funcs": [
+        3,
+        4
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Abhishri Aggarwal": {
+      "name": "Abhishri Aggarwal",
+      "role": "Integration Manager of Packaging & Sustainability",
+      "org": "PepsiCo",
+      "degree": "MBA",
+      "year": "'21",
+      "desc": "Abhishri has 10+ years of experience across program management, data analysis and leading new initiatives. She is passionate about innovation-driven sustainable growth and evidence-based decision making. Currently, she leads supply chain integration of sustainability and packaging initiatives for PepsiCo Beverages North America.",
+      "linkedin": "https://www.linkedin.com/in/abhishriaggarwal/",
+      "cats": [
+        "Pollution",
+        "Waste",
+        "Water"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Abigail Barnes": {
+      "name": "Abigail Barnes",
+      "role": "Co-Founder & CEO",
+      "org": "Amulet",
+      "degree": "MEM & JD",
+      "year": "'16",
+      "desc": "Abigail Barnes is a writer, founder, and lawyer. She created Amulet initially to promote a healthier and safer food system with rapid on-site electrochemical detection. The technology is now expanding to detect health metrics.",
+      "linkedin": "https://www.linkedin.com/in/abigail-barnes/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Adebayo (Sam) Alonge": {
+      "name": "Adebayo (Sam) Alonge",
+      "role": "Founder & Chairman",
+      "org": "RxAll; Founder, StorsApp",
+      "degree": "MBA",
+      "year": "'16",
+      "desc": "After surviving the usage of structural fake drug disbursement, Alonge co-created RxAll to mitigate the harm of counterfeit medical drugs. His work has deeply impacted the healthcare space in Africa, Asia, and North America, delivering certified quality medicines to more than 3 million patients per month.",
+      "linkedin": "https://www.linkedin.com/in/adebayo-sam-alonge/",
+      "cats": [
+        "Diversity & Inclusion",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3,
+        6
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Adrianna Alterman": {
+      "name": "Adrianna Alterman",
+      "role": "Principal",
+      "org": "Salesforce Ventures",
+      "degree": "MBA",
+      "year": "'19",
+      "desc": "As one of Salesforce Ventures' first employees, Alterman leads investments in energy, climate tech, and workforce resilience technologies.",
+      "linkedin": "https://www.linkedin.com/in/adriannaalterman/",
+      "cats": [
+        "Climate",
+        "Financial Services"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Alexandra Sing": {
+      "name": "Alexandra Sing",
+      "role": "Director of Investments",
+      "org": "Heron; Former Chief Operating Officer, Capitalize Good",
+      "degree": "MBA",
+      "year": "'20",
+      "desc": "Sing advises corporations on how to lead with enterprise capital in their businesses. She also manages a portfolio of investments aimed at empowering disadvantaged rural communities across the U.S.",
+      "linkedin": "https://www.linkedin.com/in/alexandra-sing-0b294648/",
+      "cats": [
+        "Capacity Building",
+        "Diversity & Inclusion",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        5,
+        6,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Amy Kao": {
+      "name": "Amy Kao",
+      "role": "Co-Founder & Chief Marketing Officer",
+      "org": "RxAll; Founder & Chairman, International Music & Arts Society",
+      "degree": "MBA",
+      "year": "'17",
+      "desc": "Kao works to increase access to medicine and reduce risk of counterfeit medicine usage.",
+      "linkedin": "https://www.linkedin.com/in/amykao02/",
+      "cats": [
+        "Arts & Culture",
+        "Diversity & Inclusion",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3,
+        6
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Anastasia Mayr": {
+      "name": "Anastasia Mayr",
+      "role": "Principal of Renewable Investments & Carbon Advisory",
+      "org": "Schneider Electric Sustainability Business",
+      "degree": "MBA",
+      "year": "'17",
+      "desc": "Mayr works to build the green economy through the intersection of climate tech, policy, finance, and equity. She has more than 13 years of experience in the energy transition industry, covering efficiency, clean energy, and carbon mitigation sectors.",
+      "linkedin": "https://www.linkedin.com/in/anastasiamayr/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Financial Services"
+      ],
+      "funcs": [
+        1,
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Andrea Levere": {
+      "name": "Andrea Levere",
+      "role": "Founder & CEO",
+      "org": "Capitalize Good; Social Enterprise Fellow, Yale SOM; Visiting Scholar, Federal Reserve Bank of New York; Ascend Fellow Alumni, Aspen Institute",
+      "degree": "MBA",
+      "year": "'83",
+      "desc": "With a career spanning over three decades in economic development finance, asset-building, and financial inclusion, Levere has dedicated her professional life to addressing wealth inequality and creating pathways to economic opportunity.",
+      "linkedin": "https://www.linkedin.com/in/andrea-levere-8366a08/",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Financial Services"
+      ],
+      "funcs": [
+        2,
+        5,
+        6
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Ann Olivarius": {
+      "name": "Ann Olivarius",
+      "role": "Chair of Executive Committee",
+      "org": "McAllister Olivarius",
+      "degree": "MBA/JD",
+      "year": "'86",
+      "desc": "Dr. Ann Olivarius is the Chair of McAllister Olivarius, a leading firm in the US and UK representing victims of sexual misconduct and discrimination in employment, universities, hospitals and other institutions.",
+      "linkedin": "https://www.linkedin.com/in/aolivarius/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Employment"
+      ],
+      "funcs": [
+        1,
+        3,
+        6
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Ariana Yuen": {
+      "name": "Ariana Yuen",
+      "role": "CEO",
+      "org": "Forested - \"we work with consumer brands and supply them with carbon-negative, nature-positive, and socially-just raw materials (honey, beeswax, essential and carrier oils, butters).",
+      "degree": "MBA",
+      "year": "'19",
+      "desc": "Ariana Yuen is a nature entrepreneur passionate about biodiversity, forest-grown ingredients, and systems thinking. She previously worked in management consulting, advising clients from across the commercial, government, and NGO/non-profit sectors.",
+      "linkedin": "https://www.linkedin.com/in/arianayuen/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate"
+      ],
+      "funcs": [
+        3,
+        4,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Ashia Ajani": {
+      "name": "Ashia Ajani",
+      "role": "Chapter Organizing Manager",
+      "org": "Sierra Club; Former Interim Executive Director, Youth vs Apocalypse",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Ajani is an environmental justice storyteller, educator, and organizer. They work to highlight climate issues that Indigenous and low-income groups face, groups who are most affected by climate change and shoulder the most environmental burdens.",
+      "linkedin": "https://www.linkedin.com/in/ashia-ajani-16a637b5/",
+      "cats": [
+        "Climate",
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        4,
+        6,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Ayush Acharya": {
+      "name": "Ayush Acharya",
+      "role": "Senior Associate of US Transactions",
+      "org": "PureSky Enegy",
+      "degree": "MEM",
+      "year": "'23",
+      "desc": "Ayush Acharya is an experienced energy consultant. He has worked on projects that promote climate mitigation and adaptation through clean energy in Nepal and now at PureSky in the U.S.",
+      "linkedin": "https://www.linkedin.com/in/ayushacharya/",
+      "cats": [
+        "Climate",
+        "Energy"
+      ],
+      "funcs": [
+        5,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Beryl Ajwang": {
+      "name": "Beryl Ajwang",
+      "role": "Food Loss & Waste Associate",
+      "org": "World Resources Institute",
+      "degree": "MEM",
+      "year": "'18",
+      "desc": "Beryl Ajwang is passionate about driving sustainable development at the intersection of energy and food systems in Africa. She currently leads multi-country initiatives to reduce food loss and waste, and partners with governments, businesses, and NGOs to strengthen agricultural value chains and enhance farmer livelihoods.",
+      "linkedin": "https://www.linkedin.com/in/beryl-ajwang-b3828851/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Waste"
+      ],
+      "funcs": [
+        7,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Beth Brockland": {
+      "name": "Beth Brockland",
+      "role": "VP",
+      "org": "Client Success & Business Development, Financial Health Network",
+      "degree": "MBA",
+      "year": "'12",
+      "desc": "Former community organizer Beth Brockland works to support financial health for the Financial Health Network's members. She develops strategies that employers can use to improve their employees' financial health and benefits.",
+      "linkedin": "https://www.linkedin.com/in/bethbrockland/",
+      "cats": [
+        "Diversity & Inclusion",
+        "Employment",
+        "Financial Services"
+      ],
+      "funcs": [
+        4,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Billy Huang": {
+      "name": "Billy Huang",
+      "role": "Founder",
+      "org": "Source Development Hub - early-stage evaluation organization, focused on developing resource delivery platforms for vulnerably housed individuals…\"",
+      "degree": "MBA",
+      "year": "'21",
+      "desc": "Billy Huang is a biologist-turned-entrepreneur and social policy advocate with interests that lie at the intersection of economic development, workforce, housing, and public health. He is particularly interested in how to design and implement technology-based interventions to improve quality of life for marginalized communities.",
+      "linkedin": "https://www.linkedin.com/in/billy-huang-6ab62b15b/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Health",
+        "Real Estate"
+      ],
+      "funcs": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Brandon Jones": {
+      "name": "Brandon Jones",
+      "role": "Consultant",
+      "org": "Bridgespan Group",
+      "degree": "MBA",
+      "year": "'23",
+      "desc": "After retiring from being an Air Force officer and developing a deep sense of service, Brandon Jones directed his attention to consulting. At The Bridgespan Group, Jones advises nonprofits and foundations.",
+      "linkedin": "https://www.linkedin.com/in/jonesbrandonj/",
+      "cats": [
+        "Capacity Building"
+      ],
+      "funcs": [
+        3
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Brian Ambrette": {
+      "name": "Brian Ambrette",
+      "role": "Director of State Resilience Office",
+      "org": "Maine Office of Community Affairs",
+      "degree": "MEM",
+      "year": "'14",
+      "desc": "Brian Ambrette applies capacity building and leadership development to address complex issues including climate adaptation, community flood resilience and sea level rise preparedness, rural prosperity and resource conservation, and coastal management.",
+      "linkedin": "https://www.linkedin.com/in/brianambrette/",
+      "cats": [
+        "Capacity Building",
+        "Climate",
+        "Infrastructure",
+        "Oceans & Coastal Zones"
+      ],
+      "funcs": [
+        1,
+        7
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Bryan Fike": {
+      "name": "Bryan Fike",
+      "role": "Research Officer",
+      "org": "Nowak Metro Finance Lab, financing small businesses for inclusive economic growth",
+      "degree": "MBA",
+      "year": "'20",
+      "desc": "At Nowak Metro Finance Lab, Fike focuses on financing for small businesses and inclusive economic growth. He is well-versed in economic development, public administration, and small business support.",
+      "linkedin": "https://www.linkedin.com/in/bryan-fike/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Employment",
+        "Financial Services"
+      ],
+      "funcs": [
+        5,
+        8
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university"
+      ]
+    },
+    "Caitlin Chiquelin": {
+      "name": "Caitlin Chiquelin",
+      "role": "Global Director of ESG & Sustainability",
+      "org": "Owens & Minor",
+      "degree": "MEM",
+      "year": "'18",
+      "desc": "Caitlin Chiquelin is an experienced sustainability professional with a history of working in the environmental space. She is skilled in life cycle assessment, sustainability reporting, program development, and ESG risk analysis.",
+      "linkedin": "https://www.linkedin.com/in/caitlin-chiquelin/",
+      "cats": [
+        "Climate",
+        "Health",
+        "Waste"
+      ],
+      "funcs": [
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Cam Humphrey": {
+      "name": "Cam Humphrey",
+      "role": "Litigation Intern",
+      "org": "NAACP Legal Defense and Education Fund; Articles Editor, Columbia Law Review; Former Philanthropy Fellow, Haas School of Business",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Cam Humphrey has experience in agricultural policy and works at the intersection of law and the environment. He is currently a JD candidate at Columbia Law School, working to support Black grassroots organizations across the South fighting for environmental justice.",
+      "linkedin": "https://www.linkedin.com/in/cam-humphrey-8892b161/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Diversity & Inclusion"
+      ],
+      "funcs": [
+        1,
+        6
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Caroline Ebinger": {
+      "name": "Caroline Ebinger",
+      "role": "Impact Advisor",
+      "org": "Lumi Partners; Former Venture Fellow, Transform Capital; Co-Founder, Mesa Foods",
+      "degree": "MEM & MBA",
+      "year": "'22",
+      "desc": "Caroline Ebinger aims to combine her passion for nature and business to make a positive, tangible difference on the planet. She has experience in marketing & branding, operations, food/ag, and conservation.",
+      "linkedin": "https://www.linkedin.com/in/cebinger/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Financial Services",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        5
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Caroline Kronley": {
+      "name": "Caroline Kronley",
+      "role": "President",
+      "org": "Tinker Foundation",
+      "degree": "MBA",
+      "year": "'07",
+      "desc": "Kronley is a philanthropy and non-profit leader with a track record in strategy development and execution for institutions and initiatives. She has extensive experience working across sectors, disciplines, and borders on a range of global and local issues.",
+      "linkedin": "https://www.linkedin.com/in/caroline-kronley-44723a5/",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        5,
+        7
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Charlie Markowitz": {
+      "name": "Charlie Markowitz",
+      "role": "Vice President of Energy Project Finance",
+      "org": "MUFG",
+      "degree": "MEM",
+      "year": "'22",
+      "desc": "Markowitz has a background in energy economics, informing his decision-making related to energy transition policies and the financing structures that fund new projects. He currently specializes in non-recourse project finance transactions across the North American power sector.",
+      "linkedin": "https://www.linkedin.com/in/charlie-markowitz/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Infrastructure"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Chloe Kidder": {
+      "name": "Chloe Kidder",
+      "role": "Engagement Manager",
+      "org": "Arbor Rising",
+      "degree": "MBA",
+      "year": "'25",
+      "desc": "As a skilled financial analyst and impact investing consultant, Kidder currently works at Arbor Rising, focused on engaging nonprofits in the pursuit of grant disbursement to nonprofits building pathways out of poverty.",
+      "linkedin": "https://www.linkedin.com/in/chloekidder/",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Education",
+        "Employment"
+      ],
+      "funcs": [
+        4,
+        5,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Chris Larson": {
+      "name": "Chris Larson",
+      "role": "Co-Founder and Chief Investment Officer",
+      "org": "Alder Point Capital Management",
+      "degree": "MBA",
+      "year": "'09",
+      "desc": "Larson co-founded Alder Point Capital, a corporation working to acquire U.S. farmland and timberland in climate-resilient regions to drive income, appreciation, and impact across the climate, biodiversity, and water sectors.",
+      "linkedin": "https://www.linkedin.com/in/chris-larson-apcm/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Land"
+      ],
+      "funcs": [
+        5,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Christine Bader": {
+      "name": "Christine Bader",
+      "role": "Adjunct Faculty",
+      "org": "Linfield University School of Business; Author",
+      "degree": "MBA",
+      "year": "'00",
+      "desc": "For the last 20 years, Bader has developed expertise in corporate responsibility, helping big companies realize their impacts on the world and creating policies to mitigate the negatives and enhance the positives. She is a skilled communicator, with many articles written for news outlets, as well as a book titled, \"The Evolution of a Corporate Idealist: When Girl Meets Oil.\"",
+      "linkedin": "https://www.linkedin.com/in/christinebader/",
+      "cats": [
+        "Capacity Building",
+        "Diversity & Inclusion"
+      ],
+      "funcs": [
+        6,
+        8
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Clint Bartlett": {
+      "name": "Clint Bartlett",
+      "role": "Blended Finance Advisor",
+      "org": "UNDP; Executive in Residence, Said School of Business at Oxford; Director, African Impact Ltd",
+      "degree": "MAM",
+      "year": "'17",
+      "desc": "Clint Bartlett's work sits at the intersection of multilateral development finance and private capital. He supports institutions like UNDP and UNCDF in identifying, structuring and mobilising investment into climate, food security, health and SME finance across the Global South.",
+      "linkedin": "https://www.linkedin.com/in/clintdbartlett/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Financial Services",
+        "Health"
+      ],
+      "funcs": [
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit",
+        "university",
+        "corporation"
+      ]
+    },
+    "Connie Chin": {
+      "name": "Connie Chin",
+      "role": "CEO",
+      "org": "Global Arts Live; Skilled in nonprofit management and cultivation of the arts (dance, library, other curatorial pursuits)",
+      "degree": "MBA",
+      "year": "'91",
+      "desc": "Connie Chin is an experienced nonprofit executive with a history of building institutional capacity. She is skilled in nonprofit organizations, fundraising, entrepreneurship, museum exhibitions, special collections, dance, festivals, and event management.",
+      "linkedin": "https://www.linkedin.com/in/conniecchin/",
+      "cats": [
+        "Arts & Culture",
+        "Community Development"
+      ],
+      "funcs": [
+        3,
+        4
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Cortney Ahern Renton": {
+      "name": "Cortney Ahern Renton",
+      "role": "Executive Director",
+      "org": "Proofing Station; Former Executive Director of CitySeed, Inc.",
+      "degree": "MEM",
+      "year": "'19",
+      "desc": "Cortney Renton is rooted in 15 years of multidisciplinary experience in leadership and strategy roles across diverse social impact organizations. Her primary focus is investing in integrated capital for food and agriculture enterprises.",
+      "linkedin": "https://www.linkedin.com/in/cortneyrenton/",
+      "cats": [
+        "Agriculture",
+        "Community Development",
+        "Education",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        4,
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Courtney Quinn": {
+      "name": "Courtney Quinn",
+      "role": "Senior Manager of Strategy & Operations at Ravel",
+      "org": "",
+      "degree": "MBA",
+      "year": "'23",
+      "desc": "Courtney Quinn is experience in issues at the intersection of big business, food, and sustainability. She achieves socially-focused agricultural solutions through marketing and strategy.",
+      "linkedin": "https://www.linkedin.com/in/courtney-quinn-01906248/",
+      "cats": [
+        "Climate",
+        "Waste"
+      ],
+      "funcs": [
+        3,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Darcy Schiber-Knowles": {
+      "name": "Darcy Schiber-Knowles",
+      "role": "VP",
+      "org": "Operational Sustainability, Dr. Bronner's",
+      "degree": "MBA",
+      "year": "'13",
+      "desc": "Darcy Shiber-Knowles is an executive leader driving innovation at one of the world's most environmentally- and socially-oriented companies. She currently works on climate justice and circularity issues, which require interdisciplinary and cross-sector collaboration at the intersection of consumer products, technical operations, organizational change management, industry leadership and mission-driven impact.",
+      "linkedin": "https://www.linkedin.com/in/darcyshiberknowles/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Waste"
+      ],
+      "funcs": [
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "David Browning": {
+      "name": "David Browning",
+      "role": "CEO",
+      "org": "Enveritas",
+      "degree": "MBA",
+      "year": "'99",
+      "desc": "Browning has decades of experience supporting smallholder farmers across Latin America and Africa. Currently, he is the CEO of Enveritas, a non-profit working to lift 5 million smallholder farmers out of poverty.",
+      "linkedin": "https://www.linkedin.com/in/david-browning-252192127/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems"
+      ],
+      "funcs": [
+        0,
+        3,
+        4
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Deborah Spalding": {
+      "name": "Deborah Spalding",
+      "role": "Global Head of Nature Finance",
+      "org": "Conservation International",
+      "degree": "MEM",
+      "year": "'06",
+      "desc": "Deborah Spalding is the Global Head of Nature Finance for Conservation International where she oversees a team that mobilizes investment for nature. Previously, she served as Chief Investment Officer of Commonfund OCIO, an investment manager for endowments, foundations, and other nonprofit institutions.",
+      "linkedin": "https://www.linkedin.com/in/deborah-spalding-cfa-2943161/",
+      "cats": [
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Land",
+        "Oceans & Coastal Zones"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "DeNeile Cooper": {
+      "name": "DeNeile Cooper",
+      "role": "Senior Manager of Strategic Engagement & Policy Implementation",
+      "org": "The Recycling Partnership",
+      "degree": "MEM",
+      "year": "'22",
+      "desc": "DeNeile Cooper is a sustainability strategist with a focus on waste management systems through the lens of waste infrastructure, supply chains, consumption culture, human systems and social history.",
+      "linkedin": "https://www.linkedin.com/in/deneilec/",
+      "cats": [
+        "Community Development",
+        "Waste"
+      ],
+      "funcs": [
+        4,
+        6,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Denis Ring": {
+      "name": "Denis Ring",
+      "role": "Founder",
+      "org": "OCHO Candy; Founder of Whole Foods 365 Brand; CEO, Bode International",
+      "degree": "MBA",
+      "year": "'84",
+      "desc": "Ring has extensive experience in developing organic, private-label brands for large grocers. He has since moved on to developing his own organic candy brand, OCHO Candy.",
+      "linkedin": "https://www.linkedin.com/in/denis-ring-38aa724/",
+      "cats": [
+        "Agriculture",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Donald Gips": {
+      "name": "Donald Gips",
+      "role": "Strategic Counselor & CEO Emeritus",
+      "org": "Skoll Foundation; Board Member, Cassava Technologies; Senior Advisor, The Blackstone Group",
+      "degree": "MBA",
+      "year": "'89",
+      "desc": "Gips is recognized as a leader in social innovation and strategic philanthropy, drawing on extensive experience across public service, business, and diplomacy. He brings more than three decades of leadership across government, philanthropy, and the social sector.",
+      "linkedin": "https://www.linkedin.com/in/dongips/",
+      "cats": [
+        "Capacity Building",
+        "Community Development"
+      ],
+      "funcs": [
+        5,
+        7
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Drew D'Alelio": {
+      "name": "Drew D'Alelio",
+      "role": "Investment Manager",
+      "org": "Sabanci Climate Ventures",
+      "degree": "MBA/MPP",
+      "year": "'22",
+      "desc": "D'Alelio invests in category defining energy technology companies that align profit, purpose, and planet. Currently, he invests with Sabanci Climate Ventures' $200M corporate venture capital fund. We invest in early and growth stage companies that bring strategic value to Sabanci Holdings, Turkiye's leading energy generation and distribution utility company.",
+      "linkedin": "https://www.linkedin.com/in/drew-d-alelio-b5b19859/",
+      "cats": [
+        "Climate",
+        "Energy"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Ellen Abramowitz": {
+      "name": "Ellen Abramowitz",
+      "role": "Executive Director",
+      "org": "Renewable Energy & Environmental Finance",
+      "degree": "MEM",
+      "year": "'18",
+      "desc": "Abramowitz works at the intersection of sustainable energy systems and urban design. She has worked in sustainable finance and energy storage at many organizations, including Stem, Inc. and Wells Fargo.",
+      "linkedin": "https://www.linkedin.com/in/ellen-beth-abramowitz/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Financial Services"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Eric Rubenstein": {
+      "name": "Eric Rubenstein",
+      "role": "Founding Managing Partner and Investor",
+      "org": "New Climate Ventures",
+      "degree": "BA, Yale College",
+      "year": "'04",
+      "desc": "Eric Rubenstein is an investor with an enthusiastic focus on commodities, energy, and impact. Rubenstein has invested in dozens of companies both professionally (as a corporate strategic investor and as a venture fund manager) and on behalf of himself and his family’s alternative investment strategy.",
+      "linkedin": "https://www.linkedin.com/in/eric--rubenstein/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Waste"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Forest Abbott-Lum": {
+      "name": "Forest Abbott-Lum",
+      "role": "Senior Staff Specialist of Climate Tech Finance",
+      "org": "Bay Area Air District; Former Climate Action Planner, Rincon Consultants",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Abbott-Lum has extensive experience in the sustainable food systems and climate tech finance spaces. She is geared towards social justice, having organized communities around climate action.",
+      "linkedin": "https://www.linkedin.com/in/forest-abbott-lum/",
+      "cats": [
+        "Agriculture",
+        "Air",
+        "Capacity Building",
+        "Climate",
+        "Community Development"
+      ],
+      "funcs": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Frances Klimczak": {
+      "name": "Frances Klimczak",
+      "role": "Head of Government Partnerships",
+      "org": "Lila Sciences",
+      "degree": "MBA/MPP",
+      "year": "'24",
+      "desc": "Frances Klimczak is a leader in social entrepreneurship, female executive empowerment, and community development through public-private partnerships. She is the founder of Bridge Watch Consulting, a social-impact LLC focused on economic development and leadership consulting for non-profit and NGO executives.",
+      "linkedin": "https://www.linkedin.com/in/frances-klimczak/",
+      "cats": [
+        "Energy",
+        "Health",
+        "Information, Comm. & Connectivity"
+      ],
+      "funcs": [
+        1,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Franz Hochstrasser": {
+      "name": "Franz Hochstrasser",
+      "role": "Managing Director of Finance at U.S. Green Bank",
+      "org": "",
+      "degree": "MEM",
+      "year": "'18",
+      "desc": "Franz Hochstrasser has worked at the nexus of climate, clean energy, community and capital for nearly twenty years. He is currently consulting, supporting governments, financial institutions, nonprofits and private companies to design and deploy capital solutions that scale clean energy and resilience.",
+      "linkedin": "https://www.linkedin.com/in/franzhochstrasser/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Real Estate"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "George Gemelas": {
+      "name": "George Gemelas",
+      "role": "Columnist",
+      "org": "Indianapolis Business Journal; Co-Founder of The Axios Project, G2 Strategies, and Climate Solutions Fund",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Gemelas works to help solve some of the core challenges on energy, climate, and society. He currently focuses on the global nuclear renaissance, cross-partisan support for energy and climate, Indiana's electricity grid, Greece and the environment, and the future of politics and society.",
+      "linkedin": "https://www.linkedin.com/in/georgegemelas/",
+      "cats": [
+        "Climate",
+        "Education",
+        "Energy",
+        "Financial Services"
+      ],
+      "funcs": [
+        1,
+        3,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit",
+        "startup"
+      ]
+    },
+    "Grace McEnery": {
+      "name": "Grace McEnery",
+      "role": "Director",
+      "org": "CCS Fundraising",
+      "degree": "MBA",
+      "year": "'25",
+      "desc": "Grace most recently served as an MBA Fellow at Potlikker Capital, a charitable loan fund that provides integrated, reparative capital to BIPOC farmers throughout the United States. Previously, she worked in development at Haley House, a food justice organization in Boston.",
+      "linkedin": "linkedin.com/in/gracemcenery",
+      "cats": [
+        "Agriculture",
+        "Capacity Building",
+        "Diversity & Inclusion"
+      ],
+      "funcs": [
+        5,
+        6,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Hannah Adams": {
+      "name": "Hannah Adams",
+      "role": "Co-Founder",
+      "org": "WSPR Health",
+      "degree": "MBA",
+      "year": "'25",
+      "desc": "Hannah Adams is experienced in nonprofit management with program and staff management roles in the U.S. and abroad. Focused on social impact roles in the U.S. connected to supporting social enterprises, enacting trust-based philanthropic strategies, and leading systems change approaches.",
+      "linkedin": "https://www.linkedin.com/in/hannah-adams-43297154/",
+      "cats": [
+        "Health",
+        "Information, Comm. & Connectivity"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Hardik Pokhrel": {
+      "name": "Hardik Pokhrel",
+      "role": "Manager of Enterprise Solutions",
+      "org": "Sol Systems",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Hardik Pokhrel has extensive experience in renewable energy project development. He has worked for several companies with the goal of increasing energy access through clean energy technologies.",
+      "linkedin": "https://www.linkedin.com/in/hardikpokhrel/",
+      "cats": [
+        "Climate",
+        "Energy"
+      ],
+      "funcs": [
+        0,
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Hilary Pennington": {
+      "name": "Hilary Pennington",
+      "role": "Executive Vice President of Global Programs at Ford Foundation",
+      "org": "",
+      "degree": "MBA",
+      "year": "'83",
+      "desc": "A national expert on postsecondary education and intergenerational change, Pennington joined the Ford Foundation in 2013. Earlier, she was an independent consultant whose clients included the Next American University project of the New America Foundation and Arizona State University. She also led the Generations Initiative, a project funded by national foundations to develop effective responses to the dramatic demographic shifts occurring in the United States.",
+      "linkedin": "https://www.linkedin.com/in/hilarypennington/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        3,
+        5,
+        6
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Jahi Wise": {
+      "name": "Jahi Wise",
+      "role": "Executive Director",
+      "org": "Southern Communities Initiative; Former Special Assistant to the President, Climate Policy and Finance",
+      "degree": "MBA & JD",
+      "year": "'16",
+      "desc": "Wise came to energy and infrastructure through community organizing. Early in his career, he led a campaign to direct funding for a major stormwater project into low-impact development projects like rain gardens, bioswales, and neighborhood-scale green infrastructure. Currently, he is the ED of Southern Communities Initiative, aiming to driv economic growth in historically underinvested areas.",
+      "linkedin": "https://www.linkedin.com/in/jahiwise/",
+      "cats": [
+        "Climate",
+        "Community Development",
+        "Diversity & Inclusion",
+        "Energy"
+      ],
+      "funcs": [
+        1,
+        3,
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "James Robertson": {
+      "name": "James Robertson",
+      "role": "Chief Development Officer",
+      "org": "Provincetown Art Association and Museum; Independent consultant; former Chief Executive, India HIV/AIDS Alliance",
+      "degree": "MBA",
+      "year": "'99",
+      "desc": "Robertson has had a long, global career advocating for people living with HIV and for LGBTQ+ communities. Talking with students, he encouraged those who are committed to making a meaningful societal impact to develop the leadership skills they’ll need to drive change.",
+      "linkedin": "https://www.linkedin.com/in/jrobertsonmph/",
+      "cats": [
+        "Arts & Culture",
+        "Diversity & Inclusion",
+        "Health"
+      ],
+      "funcs": [
+        3,
+        4,
+        6
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Jeff Adams": {
+      "name": "Jeff Adams",
+      "role": "Senior VP",
+      "org": "ICF",
+      "degree": "MEM & MBA",
+      "year": "'98",
+      "desc": "Adams is a digital technology and marketing executive with 19+ years of experience implementing customer engagement strategies and solutions that benefit clients, their customers and the world we live in. He works with energy users and utilities to drive behavioral changes.",
+      "linkedin": "https://www.linkedin.com/in/jeff-adams-857b0a3/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Information, Comm. & Connectivity",
+        "Infrastructure"
+      ],
+      "funcs": [
+        1,
+        3,
+        8
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Jeff Grosz": {
+      "name": "Jeff Grosz",
+      "role": "Executive Vice President",
+      "org": "Evidence Action - leads the Accelerator focused on Safe Water and Maternal, Neonatal, and Child Health program pillars",
+      "degree": "MBA",
+      "year": "'10",
+      "desc": "Grosz works to build the next generation of cost-effective programs that are ready for scaling, with a focus on safe water and neonatal and child healthcare. Previously, he worked to increase access to quality cancer treatment in Uganda.",
+      "linkedin": "https://www.linkedin.com/in/jeffrey-grosz-803a19b9/",
+      "cats": [
+        "Health",
+        "Water"
+      ],
+      "funcs": [
+        3,
+        4
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Jessamine Fitzpatrick": {
+      "name": "Jessamine Fitzpatrick",
+      "role": "Co-Founder & Managing Director",
+      "org": "Alder Point Capital Management",
+      "degree": "MEM & MBA",
+      "year": "'12",
+      "desc": "Shadle co-founded Alder Point Capital, a corporation working to acquire U.S. farmland and timberland in climate-resilient regions to drive income, appreciation, and impact across the climate, biodiversity, and water sectors.",
+      "linkedin": "https://www.linkedin.com/in/jessaminefitzpatrick/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Land"
+      ],
+      "funcs": [
+        3,
+        5,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Jinali Mody": {
+      "name": "Jinali Mody",
+      "role": "Founder of Banofi Leather",
+      "org": "",
+      "degree": "MEM",
+      "year": "'23",
+      "desc": "Jinali Mody is the founder and CEO of Banofi Leather. Her company is reducing the environmental impacts from fashion with plant-based leather made from crop waste. She previously worked as a Business Analyst at McKinsey & Co.",
+      "linkedin": "https://www.linkedin.com/in/modyjinali/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Waste"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Joe Dobrow": {
+      "name": "Joe Dobrow",
+      "role": "Founder of MBArk",
+      "org": "focused on connecting business education with food business and sustainability-focused sectors",
+      "degree": "MBA",
+      "year": "'92",
+      "desc": "Joe Dobrow is a writer and marketing consultant who is the author of the new entrepreneurial history of the natural foods industry. He has more than two decades of experience as the top marketing executive for some of the most prominent natural foods retailers in the U.S., including Whole Foods, Fresh Fields and Sprouts.",
+      "linkedin": "https://www.linkedin.com/in/joe-dobrow-b450387/",
+      "cats": [
+        "Agriculture",
+        "Education"
+      ],
+      "funcs": [
+        2,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Judy Samuelson": {
+      "name": "Judy Samuelson",
+      "role": "Executive Director of Aspen Business & Society Program; VP of Aspen Institute",
+      "org": "",
+      "degree": "MPPM",
+      "year": "'82",
+      "desc": "Judy Samuelson is founder and executive director of the Aspen Institute Business and Society Program and author of Six New Rules of Business: Creating Real Value in a Changing World. She has worked in legislative affairs in CA, as a banker in New York's garment center, and ran the impact investing arm of the Ford Foundation.",
+      "linkedin": "https://www.linkedin.com/in/judy-samuelson/",
+      "cats": [
+        "Capacity Building",
+        "Employment"
+      ],
+      "funcs": [
+        2,
+        7,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Julienne Oyler": {
+      "name": "Julienne Oyler",
+      "role": "Co-Founder",
+      "org": "Inkomoko",
+      "degree": "MBA",
+      "year": "'12",
+      "desc": "Julienne Oyler, is the founder and executive director of African Entrepreneur Collective (AEC). Julienne is passionate about developing the capacity of African youth, which led her to found AEC to help young entrepreneurs grow their businesses and create jobs for others, stemming the epidemic of youth unemployment across Africa.",
+      "linkedin": "https://fellows.echoinggreen.org/fellow/julienne-oyler/",
+      "cats": [
+        "Community Development",
+        "Employment",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        4,
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Katherine Gross": {
+      "name": "Katherine Gross",
+      "role": "Director",
+      "org": "Charlotte Foundation",
+      "degree": "MBA",
+      "year": "'83",
+      "desc": "Katherine Gross is the Director of The Charlotte Foundation, a family foundation that provides high-performing nonprofits with strategic advice along with funding. She also works to improve the efficacy of Boston area philanthropy by serving on the Boards of the Social Innovation Forum and Edvestors.",
+      "linkedin": "https://www.linkedin.com/in/katherine-gross-42320a2/",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Education"
+      ],
+      "funcs": [
+        3,
+        6
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Kelly McGlinchey": {
+      "name": "Kelly McGlinchey",
+      "role": "Principal at Quantis; Adjunct Professor of Ecological Agriculture",
+      "org": "Connecticut College; Founder & President, Table & Tith",
+      "degree": "MEM",
+      "year": "'23",
+      "desc": "Kelly is a passionate, results-oriented leader in the food sustainability sector who finds her work most fulfilling when building partnerships, facilitating community engagement, and connecting stakeholders to execute a vision.",
+      "linkedin": "https://www.linkedin.com/in/kellymcglinchey/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Oceans & Coastal Zones"
+      ],
+      "funcs": [
+        7,
+        8
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university"
+      ]
+    },
+    "Linda Mason": {
+      "name": "Linda Mason",
+      "role": "Co-founder",
+      "org": "Bright Horizons; Board Chair, Mercy Corps",
+      "degree": "MBA",
+      "year": "'80",
+      "desc": "In her formative years, Linda Mason observed international war and invasions and began a path down humanitarian work. She brought this work back to her in the US, noticing a childcare crisis and creating the nation's largest childcare company, serving over 150,000 families.",
+      "linkedin": "https://som.yale.edu/story/2025/leaders-all-sectors-finding-calling",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        3,
+        4,
+        6
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Lindsay Greene": {
+      "name": "Lindsay Greene",
+      "role": "President and CEO",
+      "org": "Brooklyn Navy Yard Development Corporation - stewarding a former shipyard that now houses more than 550 businesses",
+      "degree": "MBA",
+      "year": "'11",
+      "desc": "Lindsay Greene is devoted to building an economy that uplifts BIPOC and businesses that help solve real problems. With previous experience at Goldman Sachs, Fresh Direct, and more, she returned to her urban development roots and oversees the inclusive prosperity of Brooklyn's Navy Yard.",
+      "linkedin": "https://www.linkedin.com/in/lsgreene/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Employment",
+        "Real Estate"
+      ],
+      "funcs": [
+        3,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Lindsey Brace-Martinez": {
+      "name": "Lindsey Brace-Martinez",
+      "role": "Founder & CEO",
+      "org": "Starpoint Advisors",
+      "degree": "MEM & MBA",
+      "year": "'95",
+      "desc": "Lindsey Martinez provides best-in-class governance, strategy and execution skill to institutions that want to scale long-term, financially competitive and sustainable solutions in the capital markets.",
+      "linkedin": "https://www.linkedin.com/in/lindseybracemartinez/",
+      "cats": [
+        "Climate",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Liz Berry Gips": {
+      "name": "Liz Berry Gips",
+      "role": "Venture Partner",
+      "org": "Draper Richards Kaplan Foundation; Board Chair, School of Leadership, Afghanistan",
+      "degree": "MBA",
+      "year": "'89",
+      "desc": "Liz Berry Gips has three decades of experience in education and leadership development. She has served as a leader, entrepreneur and strategist for a variety of organizations in the non-profit, academic and public sectors. She is especially skilled at developing innovative organizations and strategic partnerships and at managing Boards and teams.",
+      "linkedin": "https://www.linkedin.com/in/liz-berry-gips-9690866a/",
+      "cats": [
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        3,
+        5,
+        6
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Louise Dubé": {
+      "name": "Louise Dubé",
+      "role": "CEO",
+      "org": "iCivics Inc",
+      "degree": "MBA",
+      "year": "'88",
+      "desc": "Inspired by a deep commitment to creating pathways to lives of learning and purpose, she has devoted her career to ensuring that all students are prepared for civic life. Louise has successfully led K-12 growth organizations that use educational media to improve student achievement across the private and nonprofit sectors.",
+      "linkedin": "https://www.linkedin.com/in/louisedube/",
+      "cats": [
+        "Education"
+      ],
+      "funcs": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Lucy Kessler": {
+      "name": "Lucy Kessler",
+      "role": "Senior Program Officer",
+      "org": "Bezos Earth Fund",
+      "degree": "MEM",
+      "year": "'18",
+      "desc": "Lucy is a leading expert in sustainable finance with nearly fifteen years of experience advancing climate solutions, spanning industry, energy, finance, and advocacy, and has successfully built ambitious climate action initiatives across complex stakeholder groups.",
+      "linkedin": "https://www.linkedin.com/in/lucy-eb-kessler/",
+      "cats": [
+        "Biodiversity & Ecosystems",
+        "Climate"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Margaret Tallmadge": {
+      "name": "Margaret Tallmadge",
+      "role": "VP of Programs",
+      "org": "Colusa Indian Energy; former Director of Development, Navajo Power",
+      "degree": "MEM",
+      "year": "'20",
+      "desc": "Tallmadge's impact is focused on a long-term goal to address the dearth of capital available to tribes for clean energy infrastructure.",
+      "linkedin": "https://www.linkedin.com/in/mtallmadge/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Energy"
+      ],
+      "funcs": [
+        0,
+        5,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Margaret Williams": {
+      "name": "Margaret Williams",
+      "role": "Senior Fellow",
+      "org": "Arctic Initiative; Former Managing Director of Arctic Programs, World Wildlife Fund",
+      "degree": "MESc",
+      "year": "'93",
+      "desc": "Williams has worked for over 25 years on conservation issues in Russia and Alaska. Prior to joining the Arctic Initiative, Williams worked to establish a biodiversity conservation program in marine and coastal ecosystems in the U.S., Russia, and Canada.",
+      "linkedin": "https://www.linkedin.com/in/margaret-williams-aa2b0a126/",
+      "cats": [
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Land",
+        "Oceans & Coastal Zones"
+      ],
+      "funcs": [
+        1,
+        3,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Marian Chertow": {
+      "name": "Marian Chertow",
+      "role": "Professor Emeritus of Industrial Ecology",
+      "org": "Yale University; Director, Yale Center for Industrial Ecology",
+      "degree": "MPPM; PhD",
+      "year": "'81",
+      "desc": "Dr. Chertow’s research and teaching focus on industrial ecology, business/environment issues, circular economy and waste management. She is best known for championing the study of industrial symbiosis involving geographically-based exchanges of materials, energy, water and by-products within networks of businesses globally.",
+      "linkedin": "https://www.linkedin.com/in/marian-chertow-5632144/",
+      "cats": [
+        "Infrastructure",
+        "Pollution",
+        "Waste"
+      ],
+      "funcs": [
+        2,
+        8
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university"
+      ]
+    },
+    "Martine Singer": {
+      "name": "Martine Singer",
+      "role": "President & CEO",
+      "org": "Children's Institute",
+      "degree": "MBA",
+      "year": "'89",
+      "desc": "Martine Singer is the President and CEO of Children’s Institute, a social impact organization that works in communities impacted by decades of racism and underinvestment.",
+      "linkedin": "https://www.linkedin.com/in/martine-singer-961940222/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Education",
+        "Health"
+      ],
+      "funcs": [
+        3,
+        4,
+        6
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Mary Ellen Iskenderian": {
+      "name": "Mary Ellen Iskenderian",
+      "role": "Presient & CEO",
+      "org": "Women's World Banking",
+      "degree": "MBA",
+      "year": "'86",
+      "desc": "Mary Ellen is a passionate advocate for women’s economic empowerment through greater access to finance and is a leading voice for women’s leadership in financial services. She has spoken widely and published extensively on the topic of equality of economic opportunity and women’s financial inclusion.",
+      "linkedin": "https://www.linkedin.com/in/maryelleniskenderian/",
+      "cats": [
+        "Diversity & Inclusion",
+        "Employment",
+        "Financial Services"
+      ],
+      "funcs": [
+        5,
+        6,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Matt Kopac": {
+      "name": "Matt Kopac",
+      "role": "Senior Sustainability Advisor",
+      "org": "Pure Strategies, Inc. Previously worked as a Sustainability Director at Burt's Bee's and an Eisenhower Circular Economy Fellow",
+      "degree": "MBA",
+      "year": "'09",
+      "desc": "Matt Kopac is a purpose-driven sustainability and social impact leader with significant experience in strategy, product innovation, operations, supply chain, and community impact. He is a community-rooted change-agent dedicated to a sustainable and equitable future.",
+      "linkedin": "https://www.linkedin.com/in/mattkopac/",
+      "cats": [
+        "Climate",
+        "Pollution",
+        "Waste"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Meaghan McGrath": {
+      "name": "Meaghan McGrath",
+      "role": "Director of Food Tech",
+      "org": "9 North Group",
+      "degree": "MEM & MBA",
+      "year": "'16",
+      "desc": "Meaghan is Director of Food Tech for 9 North Group, a firm that specializes in scaling innovations in food and agriculture. She has worked for companies advancing innovative business models to scale more sustainable food production. Across her roles, Meaghan focuses on strategy, partnerships and product development.",
+      "linkedin": "https://www.linkedin.com/in/meaghan-mcgrath/",
+      "cats": [
+        "Agriculture"
+      ],
+      "funcs": [
+        0,
+        3,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Meg Byerly Williams": {
+      "name": "Meg Byerly Williams",
+      "role": "In-House Counsel",
+      "org": "Skeo Group; Former Staff Attorney & Consultant at Elisabeth Haub School of Law",
+      "degree": "MEM & JD",
+      "year": "'11",
+      "desc": "Meg has 16 years of experience practicing as an attorney and policy leader in land use, regulatory compliance, and sustainable development. Her career has focused on translating complex legal and policy frameworks into practical, implementable strategies that help governments and mission-driven organizations achieve policy, regulatory, and compliance goals.",
+      "linkedin": "https://www.linkedin.com/in/meg-byerly-williams/",
+      "cats": [
+        "Climate",
+        "Land",
+        "Pollution"
+      ],
+      "funcs": [
+        1,
+        6,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation",
+        "university"
+      ]
+    },
+    "Michael Apkon": {
+      "name": "Michael Apkon",
+      "role": "Director",
+      "org": "Coverys Insurance; Former CEO, Tufts Medical Center & Floating Hospital for Children",
+      "degree": "MBA; MD; PhD",
+      "year": "'02",
+      "desc": "Dr. Apkon is a physician executive and physician scientist serving in C-level leadership roles at several top academic hospitals in the United States and Canada as well as an advisor to healthcare and life-sciences companies.",
+      "linkedin": "https://www.linkedin.com/in/michael-apkon-49242314/",
+      "cats": [
+        "Health"
+      ],
+      "funcs": [
+        3
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit",
+        "university"
+      ]
+    },
+    "Nancy Pfund": {
+      "name": "Nancy Pfund",
+      "role": "Founder and Managing Partner",
+      "org": "DBL Partners",
+      "degree": "MBA",
+      "year": "'82",
+      "desc": "Nancy Pfund is a pioneer and leading player in impact investing. As the Founder of DBL, she has helped to reveal the power of venture capital to promote social change and environmental improvement. Pfund currently sits on the board of 9 companies and often engages academic and professional audiences in the importance of impact investing.",
+      "linkedin": "https://www.linkedin.com/in/nancy-pfund-30b6ab13/",
+      "cats": [
+        "Climate",
+        "Employment",
+        "Energy"
+      ],
+      "funcs": [
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Nathaniel Heller": {
+      "name": "Nathaniel Heller",
+      "role": "Co-founder & Chief Growth Officer",
+      "org": "MoPhones",
+      "degree": "MBA",
+      "year": "'09",
+      "desc": "Heller has spent 25 years building new things in challenging places, from distributed solar fintech, device financing, and last-mile distribution networks. Most of this work was executed in markets where the infrastructure and sometimes the product category had to be invented from scratch.",
+      "linkedin": "https://www.linkedin.com/in/nateheller/",
+      "cats": [
+        "Community Development",
+        "Energy"
+      ],
+      "funcs": [
+        3,
+        5
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Nenha Young": {
+      "name": "Nenha Young",
+      "role": "Senior Director for Market Development",
+      "org": "Coalition for Green Capital; Former Analyst at McKinsey & Company",
+      "degree": "MEM",
+      "year": "'22",
+      "desc": "At CGC, Young supports the expansion of CGC’s efforts to raise and deploy climate finance programs, products, and services in low-income and disadvantaged communities across the United States.",
+      "linkedin": "https://www.linkedin.com/in/nenha-young-675b0239/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Financial Services"
+      ],
+      "funcs": [
+        1,
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Nikola Alexandre": {
+      "name": "Nikola Alexandre",
+      "role": "VP of Nature Fund Advisory",
+      "org": "Conservation International; Co-Founder of Shelterwood Collective",
+      "degree": "MEM & MBA",
+      "year": "'18",
+      "desc": "Alexandre leads a global team dedicated to increasing the flow of financing to high-quality nature-based solution projects around the world. He is also the co-founder, Stewardship Lead, and Board Treasurer of the Shelterwood Collective, a land justice and forest restoration nonprofit that focuses on demonstrating community-centered approaches to land stewardship.",
+      "linkedin": "https://www.linkedin.com/in/nikola-alexandre-848a5353/",
+      "cats": [
+        "Biodiversity & Ecosystems",
+        "Community Development",
+        "Diversity & Inclusion",
+        "Land"
+      ],
+      "funcs": [
+        4,
+        6,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Omar Ben Halim": {
+      "name": "Omar Ben Halim",
+      "role": "Head of MENA (Middle East and North Africa)",
+      "org": "Rainmaker Technology",
+      "degree": "MBA",
+      "year": "'12",
+      "desc": "Omar Ben Halim has experience investing in and promoting policy solutions for a range of enviornmental issues, including climate, water, clean energy, critical minerals, supply chains, and agriculture.",
+      "linkedin": "https://www.linkedin.com/in/omar-ben-halim-38664198/",
+      "cats": [
+        "Climate",
+        "Water"
+      ],
+      "funcs": [
+        0,
+        1,
+        7
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Pari Kasotia": {
+      "name": "Pari Kasotia",
+      "role": "Head of State and Federal Policy/Regulatory Affairs",
+      "org": "Luminace",
+      "degree": "MEM",
+      "year": "'22",
+      "desc": "Pari is an energy policy expert with 10+ years of experience in the clean energy space. She works to bridge the gap between energy policy and on-the-ground project implementation.",
+      "linkedin": "https://www.linkedin.com/in/parikasotia/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Financial Services"
+      ],
+      "funcs": [
+        1,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Peter Waggonner": {
+      "name": "Peter Waggonner",
+      "role": "Vice President of Policy & Sustainability",
+      "org": "GNO New Orleans",
+      "degree": "MBA",
+      "year": "'26",
+      "desc": "Peter Waggonner has a special interest in the insurability and financeability of communities. As VP of Policy & Sustainability for Greater New Orleans, Inc., Southeast Louisiana’s regional economic development organization, Peter's portfolio encompasses infrastructure, insurance, and the environment at local, state, and federal levels.",
+      "linkedin": "https://www.linkedin.com/in/peterwaggonner/",
+      "cats": [
+        "Climate",
+        "Community Development",
+        "Oceans & Coastal Zones"
+      ],
+      "funcs": [
+        1,
+        3,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Rachel Gould": {
+      "name": "Rachel Gould",
+      "role": "Senior Finance & Commercialization Specialist",
+      "org": "US DOE; Senior Investments Associate, HASI",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Rachel Gould is an environmental professional passionate about addressing climate change and reversing nature loss through capital investments. She has experience ranging across many aspects of the environmental field including sustainable investing, climate tech, consulting, corporate sustainability, and nonprofits.",
+      "linkedin": "https://www.linkedin.com/in/rachel-gould-b2668763/",
+      "cats": [
+        "Climate",
+        "Energy",
+        "Infrastructure"
+      ],
+      "funcs": [
+        1,
+        5
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Ravneeta Consul": {
+      "name": "Ravneeta Consul",
+      "role": "Chief Operating Officer",
+      "org": "Undue Medical Debt",
+      "degree": "MBA",
+      "year": "'06",
+      "desc": "Through her work, Consul has developed a deeper understanding of the structural nature of medical debt in the United States. She has extensive experience in strategy and operations, as well as M&A, growth, and innovation projects.",
+      "linkedin": "https://www.linkedin.com/in/ravneeta-consul-475a5740/",
+      "cats": [
+        "Capacity Building",
+        "Financial Services",
+        "Health"
+      ],
+      "funcs": [
+        3,
+        4,
+        5
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Rita Effah": {
+      "name": "Rita Effah",
+      "role": "Senior Climate Finance Officer",
+      "org": "African Development Bank",
+      "degree": "MFS",
+      "year": "'12",
+      "desc": "Rita Effah is a Senior Climate Finance Officer at the African Development Bank (AfDB). She is the Coordinator of the Africa Climate Change Fund, a multi-donor trust fund hosted by the AfDB to improve the resilience of African countries to the negative impacts of climate change and the transition to sustainable low-carbon development.",
+      "linkedin": "https://www.linkedin.com/in/rita-effah-5761aa29/",
+      "cats": [
+        "Climate",
+        "Diversity & Inclusion",
+        "Financial Services"
+      ],
+      "funcs": [
+        1,
+        5,
+        7
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Rob Levy": {
+      "name": "Rob Levy",
+      "role": "Business Director",
+      "org": "Capital One; Former VP of Research, Financial Health Network",
+      "degree": "MBA",
+      "year": "'10",
+      "desc": "Levy has developed his career by helping financial services companies design solutions to improve the financial health of their customers, clients, and employees. He primarily leads expert teams to enable strategic, data-driven decisions.",
+      "linkedin": "https://www.linkedin.com/in/robdlevy/",
+      "cats": [
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Seth Goldman": {
+      "name": "Seth Goldman",
+      "role": "Co-founder & CEO at Just Ice Tea",
+      "org": "Co-Found & Board Chair at PLNT Burger, Chair of Board at Beyond Meat",
+      "degree": "MPPM",
+      "year": "'95",
+      "desc": "Goldman has extensive experience in the sustainable agriculture business, having launched several businesses. With each experience, he shares a commitment to organic and fair trade products, believing that they help provide a more just, healthier way of life for farmers and the planet.",
+      "linkedin": "https://www.linkedin.com/in/seth-goldman-234bb7124/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Simon Bunyan": {
+      "name": "Simon Bunyan",
+      "role": "Management and Program Analyst in the Office of Energy Justice & Equity; US DOE",
+      "org": "",
+      "degree": "MEM",
+      "year": "'22",
+      "desc": "Simon Bunyan has extensive experience with government agencies, working to help communities implement clean energy solutions.",
+      "linkedin": "https://www.linkedin.com/in/simon-bunyan-91ba269a/",
+      "cats": [
+        "Climate",
+        "Diversity & Inclusion",
+        "Energy"
+      ],
+      "funcs": [
+        1,
+        6
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Sooah Rho": {
+      "name": "Sooah Rho",
+      "role": "Senior Associate Director",
+      "org": "Yale SOM",
+      "degree": "MBA",
+      "year": "'23",
+      "desc": "Sooah Rho brings a wealth of experience in social impact consulting, advocacy, and education. Previously, she worked at Social Finance, assisting the impact advisory and investments team to drive change in workforce development and education.",
+      "linkedin": "https://www.linkedin.com/in/sooahrho/",
+      "cats": [
+        "Capacity Building",
+        "Diversity & Inclusion",
+        "Education"
+      ],
+      "funcs": [
+        2,
+        3,
+        5
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university"
+      ]
+    },
+    "Spenser Shadle": {
+      "name": "Spenser Shadle",
+      "role": "Co-Founder & Managing Director",
+      "org": "Alder Point Capital Management",
+      "degree": "MEM & MBA",
+      "year": "'13",
+      "desc": "Shadle co-founded Alder Point Capital, a corporation working to acquire U.S. farmland and timberland in climate-resilient regions to drive income, appreciation, and impact across the climate, biodiversity, and water sectors.",
+      "linkedin": "https://www.linkedin.com/in/spensershadle/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate",
+        "Land"
+      ],
+      "funcs": [
+        3,
+        5,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Srishti Singh": {
+      "name": "Srishti Singh",
+      "role": "Sustainable Operations Associate",
+      "org": "Goldman Sachs",
+      "degree": "MEM",
+      "year": "'25",
+      "desc": "Srishti focuses her work on water and climate finance, with the goal of bringing more finance into the water sector of the Global South. Singh helps tackle issues of climate resilience and water security.",
+      "linkedin": "https://www.linkedin.com/in/srishti-singhh/",
+      "cats": [
+        "Financial Services",
+        "Pollution",
+        "Water"
+      ],
+      "funcs": [
+        1,
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Stephen Nabinger": {
+      "name": "Stephen Nabinger",
+      "role": "Senior Manager of Global Health Advocacy and Communications",
+      "org": "Gates Foundation",
+      "degree": "MBA",
+      "year": "'18",
+      "desc": "Nabinger is a health strategist who manages a portfolio to promote global health equality, with a focus on maternal, newborn, child health, and family planning.",
+      "linkedin": "https://www.linkedin.com/in/snabinger/",
+      "cats": [
+        "Capacity Building",
+        "Diversity & Inclusion",
+        "Health"
+      ],
+      "funcs": [
+        4,
+        5,
+        6
+      ],
+      "orgType": "foundation",
+      "orgs": [
+        "foundation"
+      ]
+    },
+    "Sue AnderBois": {
+      "name": "Sue AnderBois",
+      "role": "Deputy Majority Whip",
+      "org": "Chair of Special Committee on Environment and Resiliency, Providence City Council",
+      "degree": "MBA",
+      "year": "'13",
+      "desc": "Before devoting her time exclusively to the Providence City Council, Sue Anderbois worked at The Nature Conservancy on climate and clean energy policy solutions at the state and regional level, as well as helping municipalities plan for climate resilience. She has also served as Rhode Island’s first director of food policy, working to support local farmers, fishers, and makers.",
+      "linkedin": "https://www.linkedin.com/in/sue-anderbois/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Energy"
+      ],
+      "funcs": [
+        1
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Svetlana Gabrilyan": {
+      "name": "Svetlana Gabrilyan",
+      "role": "Project Developer",
+      "org": "EDF Renewables; Clean Energy Leadership Institute Fellow",
+      "degree": "MEM",
+      "year": "'21",
+      "desc": "Gabrilyan leads the development of utility scale solar projects across several states in the Midwest, while managing relationships with government officials and stakeholders.",
+      "linkedin": "https://www.linkedin.com/in/svetlana-gabrilyan-1112a919a/",
+      "cats": [
+        "Climate",
+        "Energy"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Terry Baker": {
+      "name": "Terry Baker",
+      "role": "CEO",
+      "org": "Society of American Foresters",
+      "degree": "MF",
+      "year": "'07",
+      "desc": "Terry Baker oversees all of SAF’s programs and collaborates with key stakeholders to establish a strategic vision committed to the scientific sustainable management of America’s forests.",
+      "linkedin": "https://www.linkedin.com/in/terry-baker-3335196/",
+      "cats": [
+        "Climate",
+        "Diversity & Inclusion",
+        "Land"
+      ],
+      "funcs": [
+        3,
+        8
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Tess Hart": {
+      "name": "Tess Hart",
+      "role": "Founder & CEO",
+      "org": "Triple Bottom Brewing",
+      "degree": "MBA/MEM",
+      "year": "'17",
+      "desc": "Tess Hart focuses on how social enterprise can catalyze economic and environmental progress in US cities. She is co-founder of Triple Bottom Brewing Company, a community craft brewery and social enterprise that creates jobs for people who face barriers to employment and connects small farmers to the growing craft beer industry.",
+      "linkedin": "https://www.linkedin.com/in/tess-hart/",
+      "cats": [
+        "Community Development",
+        "Diversity & Inclusion",
+        "Employment"
+      ],
+      "funcs": [
+        3,
+        6
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    },
+    "Tony Cisneros": {
+      "name": "Tony Cisneros",
+      "role": "Manager",
+      "org": "Deloitte; Former Program Director for The Garrison Institute's Pathways to Planetary Health; Co-Founder of Mesa Foods",
+      "degree": "MEM & MBA",
+      "year": "'21",
+      "desc": "Tony Cisneros is a Manager in Deloitte's Sustainability Strategy & Transformation practice. He focuses primarily on food systems and nature-based solutions intersecting core business operations and sustainability.",
+      "linkedin": "https://www.linkedin.com/in/anthonybcisneros/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        8
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation",
+        "startup"
+      ]
+    },
+    "Trent Fuenmayor": {
+      "name": "Trent Fuenmayor",
+      "role": "Chief Data & AI Officer",
+      "org": "Bureau of African Affairs, US State Department",
+      "degree": "MBA",
+      "year": "'20",
+      "desc": "Fuenmayor has 10+ years of global experience driving impact across policy, technology, and non-profits. At the U.S. Department of State, he leads a bureau-wide data strategy and responsible AI deployment in African embassies. His background includes launching Coinbase’s $400M+ Giving program, managing partnerships in refugee and public health initiatives, and scaling operations in conflict-affected regions.",
+      "linkedin": "https://www.linkedin.com/in/trentfuenmayor/",
+      "cats": [
+        "Information, Comm. & Connectivity",
+        "Infrastructure"
+      ],
+      "funcs": [
+        0,
+        1,
+        3
+      ],
+      "orgType": "government",
+      "orgs": [
+        "government"
+      ]
+    },
+    "Viveca Morris": {
+      "name": "Viveca Morris",
+      "role": "Executive Director of LEAP (Law",
+      "org": "Environment & Animals Program) - Yale Law School",
+      "degree": "MEM & MBA",
+      "year": "'18",
+      "desc": "Morris investigates the impacts of big business on the environment. Her recent research focuses on the role of multinational agribusinesses in the climate crisis, strategies to hold agribusinesses and associated actors accountable for their environmental impacts and externalized costs, and policy reforms needed to make agriculture more sustainable, humane, and resilient.",
+      "linkedin": "https://www.linkedin.com/in/viveca-morris/",
+      "cats": [
+        "Agriculture",
+        "Biodiversity & Ecosystems",
+        "Climate"
+      ],
+      "funcs": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university"
+      ]
+    },
+    "Zoë Geller": {
+      "name": "Zoë Geller",
+      "role": "Founder & CEO",
+      "org": "Fire Ox Foods - \"making food that is better for people and the planet by making vegetable-based foods accessible to all\"",
+      "degree": "MBA",
+      "year": "'17",
+      "desc": "Zoë Geller is passionate about helping people eat well and supporting others in building mission-driven brands that create a more compassionate, sustainable world. At her startup, Fire Ox Foods, she has developed and commercialized 5 frozen meal products.",
+      "linkedin": "https://www.linkedin.com/in/zoe-lloyd-geller/",
+      "cats": [
+        "Agriculture",
+        "Climate",
+        "Health"
+      ],
+      "funcs": [
+        0,
+        3
+      ],
+      "orgType": "startup",
+      "orgs": [
+        "startup"
+      ]
+    },
+    "Dan Weiss": {
+      "name": "Dan Weiss",
+      "role": "Former President & CEO",
+      "org": "Metropolitan Museum of Art; Emeritus Faculty, Johns Hopkins Krieger School of Arts & Sciences",
+      "degree": "MPPM",
+      "year": "'85",
+      "desc": "Daniel Weiss is an incredibly decorated leader and scholar. In his academic and professional life, has a deep focus on art history and museum/non-profit management, spanning the Middle Ages through Late Antiquity. He is the recipient of three honorary degrees and awards including the Yale SOM Business and Society Award and the Van Courtlandt Elliott Award from the Medieval Academy of America.",
+      "linkedin": "https://www.linkedin.com/in/dan-weiss-49676a165/",
+      "cats": [
+        "Arts & Culture",
+        "Education"
+      ],
+      "funcs": [
+        2,
+        3,
+        4
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university",
+        "nonprofit"
+      ]
+    },
+    "Jessica Labbe": {
+      "name": "Jessica Labbe",
+      "role": "Deputy Director for Finance & Administration",
+      "org": "Yale Center for British Art",
+      "degree": "MBA",
+      "year": "'08",
+      "desc": "Jessica Labbe has devoted her career to the arts. Prior to her tenure at the Yale Center for British Art and the University Art Gallery, she worked as an Associate at a private art gallery in New York. She now manages the Center's finances and business operations.",
+      "linkedin": "https://www.linkedin.com/in/jessica-labbe-8525713/",
+      "cats": [
+        "Arts & Culture",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        4,
+        5
+      ],
+      "orgType": "university",
+      "orgs": [
+        "university",
+        "nonprofit"
+      ]
+    },
+    "Michael Barker": {
+      "name": "Michael Barker",
+      "role": "CEO",
+      "org": "Pursued by a Bear LLC; CFO, The 5th Avenue Theatre; Fundraising Consultant, Wesport Museum for History and Culture",
+      "degree": "MBA",
+      "year": "'10",
+      "desc": "Michael Barker is a skilled nonprofit manager and leader in the arts. Equipped with an MBA and an MFA from Yale, he has led large teams across theatres, consultancies, and his own nonprofit. He is an artist through and through, and a talented financial advisor and management specialist.",
+      "linkedin": "https://www.linkedin.com/in/michaelgbarker/",
+      "cats": [
+        "Arts & Culture",
+        "Capacity Building",
+        "Financial Services"
+      ],
+      "funcs": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit",
+        "foundation"
+      ]
+    },
+    "Tiffany Lau": {
+      "name": "Tiffany Lau",
+      "role": "Deputy Director",
+      "org": "The Lenny Zakim Fund",
+      "degree": "MBA",
+      "year": "'19",
+      "desc": "Tiffany Lau work at the intersection of philanthropy, social justice, and community power, supporting the people and nonprofits building structural change from the ground up. She aligns values, vision, strategy, and implementation across grantmaking strategy, capacity building programs, and community relationships. She applies her deep skillset in management to the arts.",
+      "linkedin": "https://www.linkedin.com/in/tiffanylau9723/",
+      "cats": [
+        "Arts & Culture",
+        "Capacity Building",
+        "Community Development"
+      ],
+      "funcs": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation",
+        "foundation"
+      ]
+    },
+    "Ramesh Ramanathan": {
+      "name": "Ramesh Ramanathan",
+      "role": "Co-Founder",
+      "org": "Janaagraha Centre for Citizenship & Democracy",
+      "degree": "MBA",
+      "year": "'91",
+      "desc": "Ramesh Ramanathan is a banker-turned-social entrepreneur. Together with his wife, Swati Ramanathan, they push for local governance mechanisms and self-determination in Indian cities, from affordable housing to micro-financing.",
+      "linkedin": "https://insights.som.yale.edu/researchers/ramesh-ramanathan",
+      "cats": [
+        "Capacity Building",
+        "Community Development",
+        "Infrastructure",
+        "Real Estate"
+      ],
+      "funcs": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "orgType": "nonprofit",
+      "orgs": [
+        "nonprofit"
+      ]
+    },
+    "Joseph Bronner": {
+      "name": "Joseph Bronner",
+      "role": "Founder & CEO",
+      "org": "Tech of Eden PBC",
+      "degree": "MBA",
+      "year": "'24",
+      "desc": "Joseph has the mind of an inventor & the heart of a connector. If you work with him, you’ll quickly find out he is primarily motivated by the prospect of finding hidden threads that enable him to make maximal positive impact wherever he is.",
+      "linkedin": "https://www.linkedin.com/in/josephbronner/",
+      "cats": [
+        "Capacity Building",
+        "Information, Comm. & Connectivity",
+        "Religion & Spirituality"
+      ],
+      "funcs": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "orgType": "corporation",
+      "orgs": [
+        "corporation"
+      ]
+    }
+  },
+  "cellData": {
+    "Health__3": [
+      "Abigail Barnes",
+      "Adebayo (Sam) Alonge",
+      "Amy Kao",
+      "Becca Miller Rose",
+      "Caitlin Chiquelin",
+      "Clint Bartlett",
+      "Denis Ring",
+      "Hannah Adams",
+      "James Robertson",
+      "Jeff Grosz",
+      "Martine Singer",
+      "Michael Apkon",
+      "Ravneeta Consul",
+      "Seth Goldman",
+      "Zoë Geller"
+    ],
+    "Health__4": [
+      "Becca Miller Rose",
+      "Billy Huang",
+      "James Robertson",
+      "Jeff Grosz",
+      "Martine Singer",
+      "Ravneeta Consul",
+      "Stephen Nabinger"
+    ],
+    "Pollution__0": [
+      "Abhishri Aggarwal",
+      "Matt Kopac"
+    ],
+    "Pollution__3": [
+      "Abhishri Aggarwal",
+      "Matt Kopac"
+    ],
+    "Waste__0": [
+      "Abhishri Aggarwal",
+      "Jinali Mody",
+      "Matt Kopac"
+    ],
+    "Waste__3": [
+      "Abhishri Aggarwal",
+      "Caitlin Chiquelin",
+      "Courtney Quinn",
+      "Darcy Schiber-Knowles",
+      "Jinali Mody",
+      "Matt Kopac"
+    ],
+    "Water__0": [
+      "Abhishri Aggarwal",
+      "Omar Ben Halim"
+    ],
+    "Water__3": [
+      "Abhishri Aggarwal",
+      "Jeff Grosz"
+    ],
+    "Agriculture__0": [
+      "Abigail Barnes",
+      "Caroline Ebinger",
+      "David Browning",
+      "Denis Ring",
+      "Jinali Mody",
+      "Meaghan McGrath",
+      "Seth Goldman",
+      "Tony Cisneros",
+      "Zoë Geller"
+    ],
+    "Agriculture__3": [
+      "Abigail Barnes",
+      "Ariana Yuen",
+      "Clint Bartlett",
+      "Cortney Ahern Renton",
+      "Darcy Schiber-Knowles",
+      "David Browning",
+      "Denis Ring",
+      "Forest Abbott-Lum",
+      "Jessamine Fitzpatrick",
+      "Jinali Mody",
+      "Meaghan McGrath",
+      "Seth Goldman",
+      "Spenser Shadle",
+      "Viveca Morris",
+      "Zoë Geller"
+    ],
+    "Climate__0": [
+      "Abigail Barnes",
+      "Caroline Ebinger",
+      "Hardik Pokhrel",
+      "Jinali Mody",
+      "Matt Kopac",
+      "Omar Ben Halim",
+      "Seth Goldman",
+      "Svetlana Gabrilyan",
+      "Tony Cisneros",
+      "Zoë Geller"
+    ],
+    "Climate__3": [
+      "Abigail Barnes",
+      "Ariana Yuen",
+      "Caitlin Chiquelin",
+      "Clint Bartlett",
+      "Courtney Quinn",
+      "Darcy Schiber-Knowles",
+      "Forest Abbott-Lum",
+      "George Gemelas",
+      "Jahi Wise",
+      "Jeff Adams",
+      "Jessamine Fitzpatrick",
+      "Jinali Mody",
+      "Lindsey Brace-Martinez",
+      "Margaret Williams",
+      "Matt Kopac",
+      "Pari Kasotia",
+      "Peter Waggonner",
+      "Seth Goldman",
+      "Spenser Shadle",
+      "Svetlana Gabrilyan",
+      "Terry Baker",
+      "Viveca Morris",
+      "Zoë Geller"
+    ],
+    "Health__0": [
+      "Abigail Barnes",
+      "Adebayo (Sam) Alonge",
+      "Amy Kao",
+      "Billy Huang",
+      "Caroline Ebinger",
+      "Denis Ring",
+      "Hannah Adams",
+      "Seth Goldman",
+      "Tony Cisneros",
+      "Zoë Geller"
+    ],
+    "Diversity & Inclusion__0": [
+      "Adebayo (Sam) Alonge",
+      "Amy Kao",
+      "Billy Huang",
+      "Margaret Tallmadge"
+    ],
+    "Diversity & Inclusion__3": [
+      "Adebayo (Sam) Alonge",
+      "Alexandra Sing",
+      "Amy Kao",
+      "Ann Olivarius",
+      "Hilary Pennington",
+      "Jahi Wise",
+      "James Robertson",
+      "Linda Mason",
+      "Lindsay Greene",
+      "Liz Berry Gips",
+      "Martine Singer",
+      "Sooah Rho",
+      "Terry Baker",
+      "Tess Hart"
+    ],
+    "Diversity & Inclusion__6": [
+      "Adebayo (Sam) Alonge",
+      "Alexandra Sing",
+      "Amy Kao",
+      "Ann Olivarius",
+      "Ashia Ajani",
+      "Billy Huang",
+      "Cam Humphrey",
+      "Christine Bader",
+      "Grace McEnery",
+      "Hilary Pennington",
+      "James Robertson",
+      "Linda Mason",
+      "Liz Berry Gips",
+      "Martine Singer",
+      "Mary Ellen Iskenderian",
+      "Nikola Alexandre",
+      "Simon Bunyan",
+      "Stephen Nabinger",
+      "Tess Hart"
+    ],
+    "Health__6": [
+      "Adebayo (Sam) Alonge",
+      "Amy Kao",
+      "Billy Huang",
+      "James Robertson",
+      "Martine Singer",
+      "Stephen Nabinger"
+    ],
+    "Climate__5": [
+      "Adrianna Alterman",
+      "Anastasia Mayr",
+      "Ayush Acharya",
+      "Caroline Ebinger",
+      "Charlie Markowitz",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Deborah Spalding",
+      "Drew D'Alelio",
+      "Ellen Abramowitz",
+      "Eric Rubenstein",
+      "Franz Hochstrasser",
+      "Hardik Pokhrel",
+      "Jahi Wise",
+      "Jessamine Fitzpatrick",
+      "Lindsey Brace-Martinez",
+      "Lucy Kessler",
+      "Nancy Pfund",
+      "Nenha Young",
+      "Rachel Gould",
+      "Rita Effah",
+      "Spenser Shadle"
+    ],
+    "Financial Services__5": [
+      "Adrianna Alterman",
+      "Alexandra Sing",
+      "Anastasia Mayr",
+      "Andrea Levere",
+      "Bryan Fike",
+      "Caroline Ebinger",
+      "Clint Bartlett",
+      "Cortney Ahern Renton",
+      "Ellen Abramowitz",
+      "Jessica Labbe",
+      "Julienne Oyler",
+      "Lindsey Brace-Martinez",
+      "Mary Ellen Iskenderian",
+      "Michael Barker",
+      "Nenha Young",
+      "Ravneeta Consul",
+      "Rita Effah",
+      "Rob Levy",
+      "Srishti Singh"
+    ],
+    "Capacity Building__3": [
+      "Alexandra Sing",
+      "Brandon Jones",
+      "Forest Abbott-Lum",
+      "Joseph Bronner",
+      "Katherine Gross",
+      "Linda Mason",
+      "Michael Barker",
+      "Ramesh Ramanathan",
+      "Ravneeta Consul",
+      "Sooah Rho",
+      "Tiffany Lau"
+    ],
+    "Capacity Building__5": [
+      "Alexandra Sing",
+      "Andrea Levere",
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Donald Gips",
+      "Grace McEnery",
+      "Joseph Bronner",
+      "Michael Barker",
+      "Ramesh Ramanathan",
+      "Ravneeta Consul",
+      "Sooah Rho",
+      "Stephen Nabinger",
+      "Tiffany Lau"
+    ],
+    "Capacity Building__6": [
+      "Alexandra Sing",
+      "Andrea Levere",
+      "Christine Bader",
+      "Forest Abbott-Lum",
+      "Grace McEnery",
+      "Katherine Gross",
+      "Linda Mason",
+      "Stephen Nabinger"
+    ],
+    "Capacity Building__8": [
+      "Alexandra Sing",
+      "Christine Bader",
+      "Judy Samuelson"
+    ],
+    "Diversity & Inclusion__5": [
+      "Alexandra Sing",
+      "Bryan Fike",
+      "Caroline Kronley",
+      "Grace McEnery",
+      "Hilary Pennington",
+      "Jahi Wise",
+      "Liz Berry Gips",
+      "Margaret Tallmadge",
+      "Mary Ellen Iskenderian",
+      "Rita Effah",
+      "Sooah Rho",
+      "Stephen Nabinger"
+    ],
+    "Diversity & Inclusion__8": [
+      "Alexandra Sing",
+      "Ashia Ajani",
+      "Beth Brockland",
+      "Bryan Fike",
+      "Christine Bader",
+      "Mary Ellen Iskenderian",
+      "Terry Baker"
+    ],
+    "Financial Services__3": [
+      "Alexandra Sing",
+      "Clint Bartlett",
+      "Cortney Ahern Renton",
+      "George Gemelas",
+      "Jessica Labbe",
+      "Julienne Oyler",
+      "Lindsey Brace-Martinez",
+      "Michael Barker",
+      "Pari Kasotia",
+      "Ravneeta Consul",
+      "Rob Levy"
+    ],
+    "Financial Services__6": [
+      "Alexandra Sing",
+      "Andrea Levere",
+      "Mary Ellen Iskenderian"
+    ],
+    "Financial Services__8": [
+      "Alexandra Sing",
+      "Beth Brockland",
+      "Bryan Fike",
+      "Clint Bartlett",
+      "George Gemelas",
+      "Mary Ellen Iskenderian",
+      "Rob Levy"
+    ],
+    "Arts & Culture__0": [
+      "Amy Kao"
+    ],
+    "Arts & Culture__3": [
+      "Amy Kao",
+      "Connie Chin",
+      "Dan Weiss",
+      "James Robertson",
+      "Jessica Labbe",
+      "Michael Barker",
+      "Tiffany Lau"
+    ],
+    "Arts & Culture__6": [
+      "Amy Kao",
+      "James Robertson"
+    ],
+    "Climate__1": [
+      "Anastasia Mayr",
+      "Brian Ambrette",
+      "Cam Humphrey",
+      "Forest Abbott-Lum",
+      "George Gemelas",
+      "Jahi Wise",
+      "Jeff Adams",
+      "Margaret Williams",
+      "Meg Byerly Williams",
+      "Nenha Young",
+      "Omar Ben Halim",
+      "Pari Kasotia",
+      "Peter Waggonner",
+      "Rachel Gould",
+      "Rita Effah",
+      "Simon Bunyan",
+      "Sue AnderBois"
+    ],
+    "Energy__1": [
+      "Anastasia Mayr",
+      "Frances Klimczak",
+      "George Gemelas",
+      "Jahi Wise",
+      "Jeff Adams",
+      "Nenha Young",
+      "Pari Kasotia",
+      "Rachel Gould",
+      "Simon Bunyan",
+      "Sue AnderBois"
+    ],
+    "Energy__5": [
+      "Anastasia Mayr",
+      "Ayush Acharya",
+      "Charlie Markowitz",
+      "Drew D'Alelio",
+      "Ellen Abramowitz",
+      "Eric Rubenstein",
+      "Franz Hochstrasser",
+      "Hardik Pokhrel",
+      "Jahi Wise",
+      "Margaret Tallmadge",
+      "Nancy Pfund",
+      "Nathaniel Heller",
+      "Nenha Young",
+      "Rachel Gould"
+    ],
+    "Financial Services__1": [
+      "Anastasia Mayr",
+      "George Gemelas",
+      "Nenha Young",
+      "Pari Kasotia",
+      "Rita Effah",
+      "Srishti Singh"
+    ],
+    "Capacity Building__2": [
+      "Andrea Levere",
+      "Judy Samuelson",
+      "Sooah Rho"
+    ],
+    "Community Development__2": [
+      "Andrea Levere"
+    ],
+    "Community Development__5": [
+      "Andrea Levere",
+      "Bryan Fike",
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Cortney Ahern Renton",
+      "Donald Gips",
+      "Hilary Pennington",
+      "Jahi Wise",
+      "Julienne Oyler",
+      "Margaret Tallmadge",
+      "Nathaniel Heller",
+      "Ramesh Ramanathan",
+      "Tiffany Lau"
+    ],
+    "Community Development__6": [
+      "Andrea Levere",
+      "Ann Olivarius",
+      "Billy Huang",
+      "DeNeile Cooper",
+      "Forest Abbott-Lum",
+      "Hilary Pennington",
+      "Katherine Gross",
+      "Linda Mason",
+      "Martine Singer",
+      "Nikola Alexandre",
+      "Tess Hart"
+    ],
+    "Financial Services__2": [
+      "Andrea Levere",
+      "Clint Bartlett"
+    ],
+    "Community Development__1": [
+      "Ann Olivarius",
+      "Billy Huang",
+      "Forest Abbott-Lum",
+      "Jahi Wise",
+      "Peter Waggonner",
+      "Ramesh Ramanathan"
+    ],
+    "Community Development__3": [
+      "Ann Olivarius",
+      "Connie Chin",
+      "Cortney Ahern Renton",
+      "Forest Abbott-Lum",
+      "Hilary Pennington",
+      "Jahi Wise",
+      "Julienne Oyler",
+      "Katherine Gross",
+      "Linda Mason",
+      "Lindsay Greene",
+      "Martine Singer",
+      "Nathaniel Heller",
+      "Peter Waggonner",
+      "Ramesh Ramanathan",
+      "Tess Hart",
+      "Tiffany Lau"
+    ],
+    "Diversity & Inclusion__1": [
+      "Ann Olivarius",
+      "Billy Huang",
+      "Cam Humphrey",
+      "Jahi Wise",
+      "Rita Effah",
+      "Simon Bunyan"
+    ],
+    "Employment__1": [
+      "Ann Olivarius"
+    ],
+    "Employment__3": [
+      "Ann Olivarius",
+      "Julienne Oyler",
+      "Lindsay Greene",
+      "Tess Hart"
+    ],
+    "Employment__6": [
+      "Ann Olivarius",
+      "Mary Ellen Iskenderian",
+      "Tess Hart"
+    ],
+    "Agriculture__4": [
+      "Ariana Yuen",
+      "Cortney Ahern Renton",
+      "David Browning"
+    ],
+    "Agriculture__7": [
+      "Ariana Yuen",
+      "Beryl Ajwang",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Forest Abbott-Lum",
+      "Grace McEnery",
+      "Jessamine Fitzpatrick",
+      "Joe Dobrow",
+      "Kelly McGlinchey",
+      "Meaghan McGrath",
+      "Spenser Shadle"
+    ],
+    "Biodiversity & Ecosystems__3": [
+      "Ariana Yuen",
+      "Clint Bartlett",
+      "David Browning",
+      "Jessamine Fitzpatrick",
+      "Margaret Williams",
+      "Spenser Shadle",
+      "Viveca Morris"
+    ],
+    "Biodiversity & Ecosystems__4": [
+      "Ariana Yuen",
+      "David Browning",
+      "Nikola Alexandre"
+    ],
+    "Biodiversity & Ecosystems__7": [
+      "Ariana Yuen",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Jessamine Fitzpatrick",
+      "Margaret Williams",
+      "Nikola Alexandre",
+      "Spenser Shadle"
+    ],
+    "Climate__4": [
+      "Ariana Yuen",
+      "Ashia Ajani"
+    ],
+    "Climate__7": [
+      "Ariana Yuen",
+      "Ayush Acharya",
+      "Beryl Ajwang",
+      "Brian Ambrette",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Courtney Quinn",
+      "Forest Abbott-Lum",
+      "Jessamine Fitzpatrick",
+      "Kelly McGlinchey",
+      "Margaret Williams",
+      "Meg Byerly Williams",
+      "Omar Ben Halim",
+      "Peter Waggonner",
+      "Rita Effah",
+      "Spenser Shadle"
+    ],
+    "Climate__6": [
+      "Ashia Ajani",
+      "Cam Humphrey",
+      "Forest Abbott-Lum",
+      "Meg Byerly Williams",
+      "Simon Bunyan",
+      "Viveca Morris"
+    ],
+    "Climate__8": [
+      "Ashia Ajani",
+      "Beryl Ajwang",
+      "Clint Bartlett",
+      "George Gemelas",
+      "Jeff Adams",
+      "Kelly McGlinchey",
+      "Terry Baker",
+      "Tony Cisneros",
+      "Viveca Morris"
+    ],
+    "Diversity & Inclusion__4": [
+      "Ashia Ajani",
+      "Beth Brockland",
+      "Billy Huang",
+      "James Robertson",
+      "Linda Mason",
+      "Martine Singer",
+      "Nikola Alexandre",
+      "Stephen Nabinger"
+    ],
+    "Education__4": [
+      "Ashia Ajani",
+      "Chloe Kidder",
+      "Cortney Ahern Renton",
+      "Dan Weiss",
+      "Linda Mason",
+      "Louise Dubé",
+      "Martine Singer"
+    ],
+    "Education__6": [
+      "Ashia Ajani",
+      "Hilary Pennington",
+      "Katherine Gross",
+      "Linda Mason",
+      "Liz Berry Gips",
+      "Louise Dubé",
+      "Martine Singer"
+    ],
+    "Education__8": [
+      "Ashia Ajani",
+      "George Gemelas",
+      "Louise Dubé"
+    ],
+    "Energy__7": [
+      "Ayush Acharya",
+      "Frances Klimczak",
+      "Margaret Tallmadge"
+    ],
+    "Agriculture__8": [
+      "Beryl Ajwang",
+      "Clint Bartlett",
+      "Kelly McGlinchey",
+      "Tony Cisneros",
+      "Viveca Morris"
+    ],
+    "Waste__7": [
+      "Beryl Ajwang",
+      "Courtney Quinn"
+    ],
+    "Waste__8": [
+      "Beryl Ajwang",
+      "DeNeile Cooper",
+      "Marian Chertow"
+    ],
+    "Employment__4": [
+      "Beth Brockland",
+      "Chloe Kidder",
+      "Julienne Oyler"
+    ],
+    "Employment__8": [
+      "Beth Brockland",
+      "Bryan Fike",
+      "Judy Samuelson",
+      "Mary Ellen Iskenderian"
+    ],
+    "Financial Services__4": [
+      "Beth Brockland",
+      "Cortney Ahern Renton",
+      "Jessica Labbe",
+      "Julienne Oyler",
+      "Michael Barker",
+      "Ravneeta Consul"
+    ],
+    "Community Development__0": [
+      "Billy Huang",
+      "Margaret Tallmadge"
+    ],
+    "Community Development__4": [
+      "Billy Huang",
+      "Chloe Kidder",
+      "Connie Chin",
+      "Cortney Ahern Renton",
+      "DeNeile Cooper",
+      "Julienne Oyler",
+      "Linda Mason",
+      "Martine Singer",
+      "Nikola Alexandre",
+      "Ramesh Ramanathan",
+      "Tiffany Lau"
+    ],
+    "Health__1": [
+      "Billy Huang",
+      "Frances Klimczak"
+    ],
+    "Real Estate__0": [
+      "Billy Huang"
+    ],
+    "Real Estate__1": [
+      "Billy Huang",
+      "Ramesh Ramanathan"
+    ],
+    "Real Estate__4": [
+      "Billy Huang",
+      "Ramesh Ramanathan"
+    ],
+    "Real Estate__6": [
+      "Billy Huang"
+    ],
+    "Capacity Building__1": [
+      "Brian Ambrette",
+      "Forest Abbott-Lum",
+      "Ramesh Ramanathan"
+    ],
+    "Capacity Building__7": [
+      "Brian Ambrette",
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Donald Gips",
+      "Forest Abbott-Lum",
+      "Grace McEnery",
+      "Judy Samuelson",
+      "Michael Barker",
+      "Ramesh Ramanathan",
+      "Tiffany Lau"
+    ],
+    "Infrastructure__1": [
+      "Brian Ambrette",
+      "Jeff Adams",
+      "Rachel Gould",
+      "Ramesh Ramanathan",
+      "Trent Fuenmayor"
+    ],
+    "Infrastructure__7": [
+      "Brian Ambrette",
+      "Ramesh Ramanathan"
+    ],
+    "Oceans & Coastal Zones__1": [
+      "Brian Ambrette",
+      "Margaret Williams",
+      "Peter Waggonner"
+    ],
+    "Oceans & Coastal Zones__7": [
+      "Brian Ambrette",
+      "Kelly McGlinchey",
+      "Margaret Williams",
+      "Peter Waggonner"
+    ],
+    "Community Development__8": [
+      "Bryan Fike",
+      "DeNeile Cooper"
+    ],
+    "Employment__5": [
+      "Bryan Fike",
+      "Chloe Kidder",
+      "Julienne Oyler",
+      "Mary Ellen Iskenderian",
+      "Nancy Pfund"
+    ],
+    "Agriculture__1": [
+      "Cam Humphrey",
+      "Forest Abbott-Lum",
+      "Sue AnderBois"
+    ],
+    "Agriculture__6": [
+      "Cam Humphrey",
+      "Forest Abbott-Lum",
+      "Grace McEnery",
+      "Viveca Morris"
+    ],
+    "Agriculture__5": [
+      "Caroline Ebinger",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Cortney Ahern Renton",
+      "Grace McEnery",
+      "Jessamine Fitzpatrick",
+      "Spenser Shadle"
+    ],
+    "Biodiversity & Ecosystems__0": [
+      "Caroline Ebinger",
+      "David Browning"
+    ],
+    "Biodiversity & Ecosystems__5": [
+      "Caroline Ebinger",
+      "Chris Larson",
+      "Clint Bartlett",
+      "Deborah Spalding",
+      "Jessamine Fitzpatrick",
+      "Lucy Kessler",
+      "Spenser Shadle"
+    ],
+    "Financial Services__0": [
+      "Caroline Ebinger"
+    ],
+    "Health__5": [
+      "Caroline Ebinger",
+      "Clint Bartlett",
+      "Ravneeta Consul",
+      "Stephen Nabinger"
+    ],
+    "Community Development__7": [
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Donald Gips",
+      "Forest Abbott-Lum",
+      "Lindsay Greene",
+      "Margaret Tallmadge",
+      "Nikola Alexandre",
+      "Peter Waggonner",
+      "Ramesh Ramanathan",
+      "Tiffany Lau"
+    ],
+    "Diversity & Inclusion__7": [
+      "Caroline Kronley",
+      "Grace McEnery",
+      "Lindsay Greene",
+      "Margaret Tallmadge",
+      "Nikola Alexandre",
+      "Rita Effah"
+    ],
+    "Education__5": [
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Cortney Ahern Renton",
+      "Hilary Pennington",
+      "Liz Berry Gips",
+      "Sooah Rho"
+    ],
+    "Education__7": [
+      "Caroline Kronley",
+      "Chloe Kidder",
+      "Joe Dobrow"
+    ],
+    "Infrastructure__5": [
+      "Charlie Markowitz",
+      "Rachel Gould",
+      "Ramesh Ramanathan"
+    ],
+    "Capacity Building__4": [
+      "Chloe Kidder",
+      "Joseph Bronner",
+      "Linda Mason",
+      "Michael Barker",
+      "Ramesh Ramanathan",
+      "Ravneeta Consul",
+      "Stephen Nabinger",
+      "Tiffany Lau"
+    ],
+    "Employment__7": [
+      "Chloe Kidder",
+      "Judy Samuelson",
+      "Lindsay Greene"
+    ],
+    "Land__5": [
+      "Chris Larson",
+      "Deborah Spalding",
+      "Jessamine Fitzpatrick",
+      "Spenser Shadle"
+    ],
+    "Land__7": [
+      "Chris Larson",
+      "Jessamine Fitzpatrick",
+      "Margaret Williams",
+      "Meg Byerly Williams",
+      "Nikola Alexandre",
+      "Spenser Shadle"
+    ],
+    "Agriculture__2": [
+      "Clint Bartlett",
+      "Joe Dobrow",
+      "Viveca Morris"
+    ],
+    "Biodiversity & Ecosystems__2": [
+      "Clint Bartlett",
+      "Viveca Morris"
+    ],
+    "Biodiversity & Ecosystems__8": [
+      "Clint Bartlett",
+      "Viveca Morris"
+    ],
+    "Climate__2": [
+      "Clint Bartlett",
+      "Viveca Morris"
+    ],
+    "Financial Services__7": [
+      "Clint Bartlett",
+      "Michael Barker",
+      "Rita Effah",
+      "Rob Levy"
+    ],
+    "Health__2": [
+      "Clint Bartlett"
+    ],
+    "Health__7": [
+      "Clint Bartlett",
+      "Frances Klimczak"
+    ],
+    "Health__8": [
+      "Clint Bartlett",
+      "Tony Cisneros"
+    ],
+    "Arts & Culture__4": [
+      "Connie Chin",
+      "Dan Weiss",
+      "James Robertson",
+      "Jessica Labbe",
+      "Michael Barker",
+      "Tiffany Lau"
+    ],
+    "Education__3": [
+      "Cortney Ahern Renton",
+      "Dan Weiss",
+      "George Gemelas",
+      "Hilary Pennington",
+      "Katherine Gross",
+      "Linda Mason",
+      "Liz Berry Gips",
+      "Martine Singer",
+      "Sooah Rho"
+    ],
+    "Oceans & Coastal Zones__5": [
+      "Deborah Spalding"
+    ],
+    "Waste__4": [
+      "DeNeile Cooper"
+    ],
+    "Waste__6": [
+      "DeNeile Cooper"
+    ],
+    "Waste__5": [
+      "Eric Rubenstein"
+    ],
+    "Air__1": [
+      "Forest Abbott-Lum"
+    ],
+    "Air__3": [
+      "Forest Abbott-Lum"
+    ],
+    "Air__6": [
+      "Forest Abbott-Lum"
+    ],
+    "Air__7": [
+      "Forest Abbott-Lum"
+    ],
+    "Information, Comm. & Connectivity__1": [
+      "Frances Klimczak",
+      "Jeff Adams",
+      "Trent Fuenmayor"
+    ],
+    "Information, Comm. & Connectivity__7": [
+      "Frances Klimczak"
+    ],
+    "Real Estate__5": [
+      "Franz Hochstrasser",
+      "Ramesh Ramanathan"
+    ],
+    "Education__1": [
+      "George Gemelas"
+    ],
+    "Energy__3": [
+      "George Gemelas",
+      "Jahi Wise",
+      "Jeff Adams",
+      "Nathaniel Heller",
+      "Pari Kasotia",
+      "Svetlana Gabrilyan"
+    ],
+    "Energy__8": [
+      "George Gemelas",
+      "Jeff Adams"
+    ],
+    "Information, Comm. & Connectivity__0": [
+      "Hannah Adams",
+      "Joseph Bronner",
+      "Trent Fuenmayor"
+    ],
+    "Information, Comm. & Connectivity__3": [
+      "Hannah Adams",
+      "Jeff Adams",
+      "Joseph Bronner",
+      "Trent Fuenmayor"
+    ],
+    "Energy__0": [
+      "Hardik Pokhrel",
+      "Margaret Tallmadge",
+      "Svetlana Gabrilyan"
+    ],
+    "Information, Comm. & Connectivity__8": [
+      "Jeff Adams"
+    ],
+    "Infrastructure__3": [
+      "Jeff Adams",
+      "Ramesh Ramanathan",
+      "Trent Fuenmayor"
+    ],
+    "Infrastructure__8": [
+      "Jeff Adams",
+      "Marian Chertow"
+    ],
+    "Water__4": [
+      "Jeff Grosz"
+    ],
+    "Land__3": [
+      "Jessamine Fitzpatrick",
+      "Margaret Williams",
+      "Spenser Shadle",
+      "Terry Baker"
+    ],
+    "Education__2": [
+      "Dan Weiss",
+      "Joe Dobrow",
+      "Louise Dubé",
+      "Sooah Rho"
+    ],
+    "Employment__2": [
+      "Judy Samuelson"
+    ],
+    "Oceans & Coastal Zones__8": [
+      "Kelly McGlinchey"
+    ],
+    "Real Estate__3": [
+      "Lindsay Greene",
+      "Ramesh Ramanathan"
+    ],
+    "Real Estate__7": [
+      "Lindsay Greene",
+      "Ramesh Ramanathan"
+    ],
+    "Education__0": [
+      "Louise Dubé"
+    ],
+    "Biodiversity & Ecosystems__1": [
+      "Margaret Williams"
+    ],
+    "Land__1": [
+      "Margaret Williams",
+      "Meg Byerly Williams"
+    ],
+    "Oceans & Coastal Zones__3": [
+      "Margaret Williams",
+      "Peter Waggonner"
+    ],
+    "Infrastructure__2": [
+      "Marian Chertow"
+    ],
+    "Pollution__2": [
+      "Marian Chertow"
+    ],
+    "Pollution__8": [
+      "Marian Chertow"
+    ],
+    "Waste__2": [
+      "Marian Chertow"
+    ],
+    "Land__6": [
+      "Meg Byerly Williams",
+      "Nikola Alexandre"
+    ],
+    "Pollution__1": [
+      "Meg Byerly Williams",
+      "Srishti Singh"
+    ],
+    "Pollution__6": [
+      "Meg Byerly Williams"
+    ],
+    "Pollution__7": [
+      "Meg Byerly Williams"
+    ],
+    "Biodiversity & Ecosystems__6": [
+      "Nikola Alexandre",
+      "Viveca Morris"
+    ],
+    "Land__4": [
+      "Nikola Alexandre"
+    ],
+    "Water__1": [
+      "Omar Ben Halim",
+      "Srishti Singh"
+    ],
+    "Water__7": [
+      "Omar Ben Halim"
+    ],
+    "Energy__6": [
+      "Simon Bunyan"
+    ],
+    "Diversity & Inclusion__2": [
+      "Sooah Rho"
+    ],
+    "Pollution__5": [
+      "Srishti Singh"
+    ],
+    "Water__5": [
+      "Srishti Singh"
+    ],
+    "Land__8": [
+      "Terry Baker"
+    ],
+    "Infrastructure__0": [
+      "Trent Fuenmayor"
+    ],
+    "Arts & Culture__2": [
+      "Dan Weiss"
+    ],
+    "Arts & Culture__5": [
+      "Jessica Labbe",
+      "Michael Barker",
+      "Tiffany Lau"
+    ],
+    "Arts & Culture__7": [
+      "Michael Barker",
+      "Tiffany Lau"
+    ],
+    "Infrastructure__4": [
+      "Ramesh Ramanathan"
+    ],
+    "Capacity Building__0": [
+      "Joseph Bronner"
+    ],
+    "Information, Comm. & Connectivity__4": [
+      "Joseph Bronner"
+    ],
+    "Information, Comm. & Connectivity__5": [
+      "Joseph Bronner"
+    ],
+    "Religion & Spirituality__0": [
+      "Joseph Bronner"
+    ],
+    "Religion & Spirituality__3": [
+      "Joseph Bronner"
+    ],
+    "Religion & Spirituality__4": [
+      "Joseph Bronner"
+    ],
+    "Religion & Spirituality__5": [
+      "Joseph Bronner"
+    ]
+  },
+  "sectors": [
+    {
+      "label": "Technology & Innovation",
+      "sub": "startups, R&D labs, tech-for-good"
+    },
+    {
+      "label": "Policy & Regulatory Affairs",
+      "sub": "government agencies, think tanks"
+    },
+    {
+      "label": "Education",
+      "sub": "schools, training, curriculum"
+    },
+    {
+      "label": "Operations & Administration",
+      "sub": "strategy, HR, finance, ops"
+    },
+    {
+      "label": "Programs & Direct Service",
+      "sub": "nonprofits, clinics, community orgs"
+    },
+    {
+      "label": "Finance & Investment",
+      "sub": "impact investors, CDFIs, foundations"
+    },
+    {
+      "label": "Equity & Advocacy",
+      "sub": "campaigns, legal orgs, coalitions"
+    },
+    {
+      "label": "Partnerships & Stakeholder Engagement",
+      "sub": "coalitions, community organizing"
+    },
+    {
+      "label": "Communications & Knowledge Sharing",
+      "sub": "media, research, storytelling"
+    }
+  ],
+  "categories": [
+    {
+      "label": "Agriculture",
+      "sub": "food systems, farming, land use",
+      "future": false
+    },
+    {
+      "label": "Air",
+      "sub": "air quality, clean air access",
+      "future": false
+    },
+    {
+      "label": "Biodiversity & Ecosystems",
+      "sub": "wildlife, habitat, conservation",
+      "future": false
+    },
+    {
+      "label": "Climate",
+      "sub": "climate change, resilience, adaptation",
+      "future": false
+    },
+    {
+      "label": "Diversity & Inclusion",
+      "sub": "equity, representation, belonging",
+      "future": false
+    },
+    {
+      "label": "Education",
+      "sub": "learning access, quality, outcomes",
+      "future": false
+    },
+    {
+      "label": "Employment",
+      "sub": "jobs, wages, worker rights",
+      "future": false
+    },
+    {
+      "label": "Energy",
+      "sub": "clean energy, access, efficiency",
+      "future": false
+    },
+    {
+      "label": "Financial Services",
+      "sub": "banking access, microfinance, lending",
+      "future": false
+    },
+    {
+      "label": "Health",
+      "sub": "healthcare access, wellbeing, public health",
+      "future": false
+    },
+    {
+      "label": "Infrastructure",
+      "sub": "roads, utilities, resilient systems",
+      "future": false
+    },
+    {
+      "label": "Land",
+      "sub": "land rights, conservation, management",
+      "future": false
+    },
+    {
+      "label": "Oceans & Coastal Zones",
+      "sub": "marine health, fishing, coastal communities",
+      "future": false
+    },
+    {
+      "label": "Pollution",
+      "sub": "waste reduction, contamination, cleanup",
+      "future": false
+    },
+    {
+      "label": "Real Estate",
+      "sub": "affordable housing, green buildings",
+      "future": false
+    },
+    {
+      "label": "Waste",
+      "sub": "waste management, recycling, circular economy",
+      "future": false
+    },
+    {
+      "label": "Water",
+      "sub": "clean water, sanitation, WASH",
+      "future": false
+    },
+    {
+      "label": "Arts & Culture",
+      "sub": "creative expression, cultural preservation",
+      "future": true
+    },
+    {
+      "label": "Capacity Building",
+      "sub": "org strengthening, training, leadership",
+      "future": true
+    },
+    {
+      "label": "Community Development",
+      "sub": "local economies, civic infrastructure",
+      "future": true
+    },
+    {
+      "label": "Information, Comm. & Connectivity",
+      "sub": "internet access, digital equity",
+      "future": true
+    },
+    {
+      "label": "Religion & Spirituality",
+      "sub": "faith communities, spiritual wellbeing",
+      "future": true
+    },
+    {
+      "label": "Transportation",
+      "sub": "mobility, transit access, logistics",
+      "future": true
+    }
+  ],
+  "orgTypes": {
+    "nonprofit": {
+      "label": "Nonprofit / NGO",
+      "color": "#E69F00"
+    },
+    "government": {
+      "label": "Government agency",
+      "color": "#0072B2"
+    },
+    "foundation": {
+      "label": "Foundation / philanthropy",
+      "color": "#56B4E9"
+    },
+    "university": {
+      "label": "University / research",
+      "color": "#CC79A7"
+    },
+    "startup": {
+      "label": "Startup / tech-for-good",
+      "color": "#D55E00"
+    },
+    "corporation": {
+      "label": "Corporation / B Corp",
+      "color": "#009E73"
+    }
+  },
+  "orgOrder": [
+    "nonprofit",
+    "government",
+    "foundation",
+    "university",
+    "startup",
+    "corporation"
+  ],
+  "generated": 1756339200,
+  "recordCount": 105
+}

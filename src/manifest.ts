@@ -58,6 +58,9 @@ export interface PublishedManifest {
  * still resolve a bundle; Drupal's WidgetCatalogService::getWidgetOptions()
  * filters deprecated entries out of the editor picker.
  *
+ * v0.3.0 (2026-09-22): adds career-explorer, the first svelte5 widget, and
+ * therefore the first entry in supportedRuntimes beyond react18.
+ *
  * v0.2.1 (2026-06-17): data refresh from economist's v2 full export.
  * energy-storage-comparison-table: updated cost figures, added Li-Ion Cost
  * Structure footnote table. investment-thesis-table: minor copy/punctuation
@@ -104,6 +107,16 @@ export const widgets: WidgetManifestEntry[] = [
     configSchema: { $ref: 'schemas/energy-storage-comparison-table.json' },
     deprecated: false,
   },
+  {
+    id: 'career-explorer',
+    label: 'Career Explorer',
+    description:
+      'Matrix of Yale social-impact alumni plotted by IRIS+ impact theme against career function, with search, organisation-type filtering, row/column focus, and per-alum profiles. Data is fetched at runtime from the cbey_airtable JSON route.',
+    version: '1.0.0',
+    runtime: 'svelte5',
+    configSchema: { $ref: 'schemas/career-explorer.json' },
+    deprecated: false,
+  },
 ];
 
-export const supportedRuntimes: WidgetRuntime[] = ['react18'];
+export const supportedRuntimes: WidgetRuntime[] = ['react18', 'svelte5'];

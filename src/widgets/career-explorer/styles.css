@@ -1,0 +1,417 @@
+/**
+ * Career Explorer — ported verbatim from the client-supplied static page
+ * (_working/iris_plus_career_matrix_v5 (1).html, lines 8–164) with four
+ * deliberate deltas, all marked PORT NOTE below. Everything else is the
+ * supplied design, unchanged.
+ *
+ * The global selectors (`*`, `body`, bare `table`, `th,td`, `thead th`) are
+ * left alone on purpose: the Drupal loader attaches an open shadow root to
+ * every mount point, so this sheet only ever matches inside that boundary.
+ * Rewriting them into BEM would buy nothing.
+ */
+
+/* PORT NOTE 1 — `:root` was `:root` in the source and would match NOTHING
+   here. A stylesheet inside a shadow root only matches elements in that
+   shadow tree, and the document root is not one of them, so every custom
+   property would have resolved to its initial (invalid) value and the
+   widget would render colourless. `:host` is the shadow-root equivalent. */
+:host {
+  --paper: #f4f2ec;
+  --ink: #14140f;
+  --muted: #6f6d64;
+  /* A11Y (WCAG 1.4.3 Contrast Minimum, AA) — VISUAL CHANGE, needs sign-off.
+     Supplied value was #9d9b90: 2.67:1 on --card, 2.36:1 on the #efece3
+     header fill. --faint carries real text — the "Last updated" line, the
+     "Organization type" label, every header/row .sub, .alum-meta and
+     .ps-label — so 4.5:1 is required. (The search placeholder is NOT styled
+     here and falls to the UA colour; left alone deliberately, since the
+     input also carries an aria-label and a visible icon.) #6c6b63 is the
+     lightest hue-preserving value clearing 4.5:1 on every surface in this
+     widget (card 5.28:1, header fill 4.66:1, paper 4.93:1). */
+  --faint: #6c6b63;
+  --line: #d7d4c8;
+  --line-soft: #e5e2d8;
+  --card: #fbfaf6;
+  --hover: #eceae0;
+  --accent: #185FA5;
+  --accent-soft: #e6f0fa;
+  --accent-line: #b7d3ef;
+
+  /* A11Y (WCAG 2.4.11 Focus Appearance, AA / 2.4.7 Focus Visible, A).
+     Keyboard-only: nothing below repaints an unfocused pixel. --ink is
+     16.5:1–17.7:1 against every surface here. Inside the matrix a dual-tone
+     inset ring is used instead, because a focused header cell's background
+     is --accent, against which --ink is only 2.83:1. */
+  --focus-ring: var(--ink);
+
+  /* PORT NOTE 2 — fonts. The source shipped a system stack
+     (-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif).
+     Swapped for the CBEY theme faces so the widget reads as part of the
+     site. BY FAMILY NAME ONLY: the theme registers these @font-face rules
+     at document level (web/themes/custom/cbey/assets/src/scss/fonts/) and
+     document-level font faces resolve inside a shadow root. Declaring
+     @font-face in here, or shipping the font files with the catalog
+     package, would create a second source of truth that drifts. */
+  --font-ui: Mallory, 'Gill Sans', 'Gill Sans MT', Calibri, Arial, sans-serif;
+  --font-display: YaleNew, TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+
+/* The component's single root element. See the comment in
+   CareerExplorer.svelte — it exists so unmount() detaches cleanly. */
+.ce-root { display: block }
+
+/* A11Y — text for assistive technology only. Used by the table caption, the
+   status live region, and the "none match" note on populated-but-filtered
+   cells. Not display:none, which would remove it from the a11y tree too. */
+.ce-vh {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0
+}
+
+/* PORT NOTE 3 — `body` never matches inside a shadow root, so the page
+   chrome the source hung off it is attached to `:host` instead. The
+   `body` selector is kept alongside so the rule still reads as the
+   original. `min-height:100vh` is dropped: this is a component in a page,
+   not the page. `font-family` MUST be set here — typography does not
+   inherit across a shadow boundary. */
+:host, body {
+  font-family: var(--font-ui);
+  background: var(--paper);
+  color: var(--ink);
+  display: block;
+  padding: 2rem 2rem 4rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+.masthead { max-width: 1180px; margin: 0 auto 18px }
+.eyebrow { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 6px }
+/* A11Y (WCAG 1.3.1, A). Was an <h1>. This widget mounts inside a paragraph
+   on a Drupal node that already owns the page's <h1>, and the shadow
+   boundary does not hide it from the accessibility tree — a second <h1>
+   would break the page outline. It is an <h2> now, styled by class so not
+   one rendered pixel moves. If the widget is ever placed as the lead
+   element of its own page, promote the level here and in Masthead.svelte. */
+.ce-title {
+  /* PORT NOTE 2 (cont.) — the masthead h1 takes YaleNew, matching the
+     theme's %text-style-h1 (core/placeholders/_text-styles.scss). Body
+     copy and every control stay on Mallory via the :host inheritance. */
+  font-family: var(--font-display);
+  font-size: 20px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--accent); line-height: 1.25
+}
+.page-sub { font-size: 13px; color: var(--muted); margin-top: 5px; max-width: 60ch }
+.updated { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); font-weight: 600; margin-top: 9px }
+.count-pill { color: var(--ink); font-weight: 600 }
+
+/* PORT NOTE 4 — icons. The source loaded @tabler/icons-webfont 2.44.0 from
+   cdn.jsdelivr.net; that <link> is gone (no runtime third-party CDN, and
+   @font-face inside a shadow root is the unreliable path anyway). Icons are
+   inline SVG, wrapped in the same <i> element the original used so every
+   `.search i` / `.avatar` font-size rule below still governs their size. */
+.ti { display: inline-flex; align-items: center; justify-content: center; line-height: 0; flex-shrink: 0 }
+.ti svg { width: 1em; height: 1em; display: block }
+
+/* ---- focus indicators (A11Y: 2.4.7 A, 2.4.11 AA) ----
+   The supplied page relied on the UA default everywhere except the search
+   input, and its clickable cells had no indicator that survived their
+   opacity states. These rules apply ONLY under :focus-visible, so a mouse
+   or touch user sees exactly the supplied design. */
+.ce-root :is(button, a, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+/* The matrix scrolls horizontally (.wrap{overflow-x:auto}), so an outward
+   ring on the first or last column would be clipped. Inset dual-tone
+   instead: one leg always clears 3:1 against the adjacent colour, including
+   the --accent fill of a focused header. */
+.ce-root :is(th, td) > button:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 4px var(--focus-ring);
+}
+
+/* ---- control bar ---- */
+.controls { max-width: 1180px; margin: 0 auto 14px; display: flex; flex-direction: column; gap: 10px }
+.searchrow { display: flex; gap: 10px; flex-wrap: wrap; align-items: center }
+.search { position: relative; flex: 1; min-width: 240px; max-width: 420px }
+.search i { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--faint); font-size: 16px }
+/* A11Y (WCAG 1.4.11 Non-text Contrast, AA) — VISUAL CHANGE, needs sign-off.
+   An empty text input has no label text inside it and its --card fill is
+   1.05:1 against the surrounding --paper, so the border is the only thing
+   identifying it as a control. Supplied --line (#d7d4c8) is 1.33:1 against
+   --paper. #8e8c84 is the lightest hue-preserving value clearing 3:1 on
+   both surfaces. Scoped to the input on purpose: the buttons elsewhere keep
+   --line, because each of those is identified by its own label text. */
+.search input {
+  width: 100%; padding: 9px 32px 9px 34px; border: 1px solid #8e8c84; border-radius: 9px;
+  background: var(--card); font-size: 13px; color: var(--ink); font-family: inherit
+}
+.search input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft) }
+.search .clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%); border: none; background: none;
+  color: var(--faint); cursor: pointer; font-size: 16px; padding: 2px
+}
+.search .clear:hover { color: var(--ink) }
+/* A11Y (WCAG 2.5.8 Target Size (Minimum), AA). The visible button is ~20x20
+   (16px icon + 2px padding). A transparent, centred 24x24 pseudo-element
+   enlarges the pointer target without moving or resizing anything visible. */
+.search .clear::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); width: 24px; height: 24px
+}
+.reset-btn {
+  border: 1px solid var(--line); background: var(--card); border-radius: 9px; padding: 8px 12px;
+  font-size: 12px; color: var(--muted); cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 5px
+}
+.reset-btn:hover { background: var(--hover); color: var(--ink) }
+.reset-btn[disabled] { opacity: .4; cursor: default }
+.togglerow { display: flex; gap: 7px; flex-wrap: wrap; align-items: center }
+.togglerow .lbl { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); font-weight: 600; margin-right: 2px }
+.orgtoggle {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px 5px 8px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--card); font-size: 11.5px; color: var(--ink); cursor: pointer;
+  font-family: inherit; transition: background .12s, border-color .12s, opacity .12s
+}
+.orgtoggle .sw { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0 }
+.orgtoggle:hover { background: var(--hover) }
+/* A11Y (WCAG 1.4.3, AA) — VISUAL CHANGE, needs sign-off. The supplied .42
+   composites --ink over --paper to 2.68:1. These are readable labels, not
+   disabled controls, so the 1.4.3 inactive-component exemption does not
+   apply. .6 is the minimum reaching 4.5:1, and the on/off read survives. */
+.orgtoggle[aria-pressed="false"] { opacity: .6; background: transparent }
+.orgtoggle[aria-pressed="false"] .sw { filter: grayscale(1) }
+.orgtoggle.sel { background: var(--accent-soft); border-color: var(--accent-line); box-shadow: 0 0 0 2px var(--accent-soft) }
+.toggle-hint { font-size: 11px; color: var(--faint); font-style: italic; margin-left: 2px }
+
+/* ---- focus indicator ---- */
+.focusbar {
+  max-width: 1180px; margin: 0 auto 12px; font-size: 12px; color: var(--muted);
+  display: flex; align-items: center; gap: 8px
+}
+.focus-chip {
+  display: inline-flex; align-items: center; gap: 6px; background: var(--accent-soft);
+  color: var(--accent); border: 1px solid var(--accent-line); border-radius: 999px; padding: 3px 6px 3px 10px; font-weight: 600
+}
+.focus-chip button { position: relative; border: none; background: none; color: var(--accent); cursor: pointer; font-size: 15px; line-height: 1; display: flex; padding: 0 2px }
+/* A11Y (WCAG 2.5.8, AA) — see the note on .search .clear. Visible box is
+   ~19x15; the pseudo-element gives it a 24x24 pointer target. */
+.focus-chip button::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); width: 24px; height: 24px
+}
+
+/* ---- matrix ---- */
+.matrix-shell { max-width: 1180px; margin: 0 auto 16px; display: flex; align-items: stretch; gap: 9px }
+.wrap { flex: 1; min-width: 0; overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--card) }
+/* ---- axis labels ---- */
+.axis-y { flex-shrink: 0; display: flex; align-items: center; justify-content: center }
+.axis-y span {
+  writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--accent); white-space: nowrap
+}
+thead tr.axis-row th { background: var(--card); border: none; cursor: default }
+thead tr.axis-row th:hover { background: var(--card) }
+thead th.axis-col {
+  color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .16em;
+  text-transform: uppercase; text-align: center; padding: 9px 5px 7px; vertical-align: middle
+}
+table { border-collapse: collapse; font-size: 10.5px; width: 100%; min-width: 940px }
+th, td { border: 1px solid var(--line-soft); padding: 0 }
+/* A11Y (WCAG 1.3.1 Info and Relationships, A / 4.1.2 Name Role Value, A).
+   The header and row-label cells carried role="button" + tabindex, which
+   replaced their columnheader/rowheader role outright — every cell below
+   them lost its header association, which on a 23x9 matrix is the most
+   useful thing a screen reader has here. The cell keeps its table semantics
+   now and a real <button> inside it carries the activation. The padding
+   moved from the cell to the button, so the rendered box and the pointer
+   target are unchanged. */
+thead th {
+  background: #efece3; color: var(--ink); font-weight: 600; font-size: 10px; text-align: center;
+  padding: 0; vertical-align: bottom; line-height: 1.28; width: 80px;
+  transition: background .12s; position: relative; user-select: none
+}
+thead th > button, .row-label > button {
+  display: block; width: 100%; background: none; border: none; border-radius: 0;
+  font: inherit; color: inherit; letter-spacing: inherit; text-align: inherit;
+  line-height: inherit; cursor: pointer; user-select: none
+}
+thead th > button { padding: 8px 5px }
+thead th:hover { background: #e6e2d6 }
+thead th .sub { display: block; font-size: 8px; color: var(--faint); font-weight: 400; margin-top: 3px; line-height: 1.25 }
+thead th.corner { background: var(--card); width: 172px; cursor: default; padding: 8px 5px }
+thead th.corner:hover { background: var(--card) }
+thead th.colfocus { background: var(--accent); color: #fff }
+thead th.colfocus .sub { color: rgba(255,255,255,.8) }
+/* Was a <td>; now a <th scope="row">, so the 23 impact themes are actual
+   row headers (1.3.1, A). text-align is declared because <th> centres by
+   default and the supplied design is left-aligned. Padding sits on the
+   button — see the note on thead th. */
+.row-label {
+  background: #efece3; color: var(--ink); font-weight: 600; font-size: 10.5px; padding: 0;
+  text-align: left;
+  vertical-align: middle; width: 172px; transition: background .12s; user-select: none; line-height: 1.25
+}
+.row-label > button { padding: 7px 9px }
+.row-label:hover { background: #e6e2d6 }
+.row-label .sub { display: block; font-size: 8px; color: var(--faint); font-weight: 400; margin-top: 2px; line-height: 1.25 }
+.row-label.rowfocus { background: var(--accent); color: #fff }
+.row-label.rowfocus .sub { color: rgba(255,255,255,.8) }
+
+/* The interactive cells host a <button> for the same reason the headers do:
+   role="button" on a <td> removes its `cell` role, and with it the row and
+   column header association. The button fills the cell exactly, so the 36px
+   x ~85px pointer target is unchanged — comfortably past the 24x24 minimum
+   of 2.5.8. (The 12px dots inside are not the target; the cell is.) */
+.cell {
+  height: 36px; text-align: center; vertical-align: middle; cursor: pointer; position: relative;
+  transition: background .1s, box-shadow .1s, opacity .12s; background: var(--card)
+}
+.cell > button {
+  display: block; width: 100%; padding: 0; margin: 0;
+  background: none; border: none; border-radius: 0; font: inherit; color: inherit;
+  cursor: pointer;
+  /* height:100% on a block child of a table cell resolves in every current
+     engine, but min-height pins the floor regardless: if it ever failed to
+     resolve, the button would shrink to the 12px dots inside it and the
+     pointer target would drop below the 24px of 2.5.8 while looking
+     identical on screen (the cell is vertical-align:middle). Mirrors the
+     .cell height directly above. */
+  height: 100%; min-height: 36px
+}
+.cell.filled { background: #f6f4ee }
+.cell.filled:hover { background: var(--hover); box-shadow: inset 0 0 0 1.5px rgba(24,95,165,.28) }
+.cell.empty { background: var(--card) }
+.cell.empty:hover { background: #f6f4ee }
+.cell.dim { opacity: .16; pointer-events: none }
+.cell.nomatch { opacity: .13; pointer-events: none }
+.cell.faded { opacity: .2 }
+/* A11Y (2.4.11, AA). A .faded cell stays clickable, so it stays keyboard
+   reachable — but a focus ring painted at 20% opacity is not an indicator.
+   Restoring full opacity while focus is inside IS the indicator. Mouse and
+   touch users never see this state. */
+.cell.faded:focus-within { opacity: 1 }
+.cell.faded.empty { pointer-events: none }
+.cell.sel { background: var(--accent-soft); box-shadow: inset 0 0 0 2px var(--accent); position: relative; z-index: 1 }
+.cell.sel:hover { background: var(--accent-soft) }
+.cell.hit { background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px var(--accent-line) }
+.cell.hit:hover { background: #dcebfa }
+.dots { display: flex; align-items: center; justify-content: center; gap: 4px; height: 100%; padding: 0 4px; flex-wrap: wrap }
+/* A11Y (WCAG 1.4.11 Non-text Contrast, AA) — VISUAL CHANGE, needs sign-off.
+   The dot colour is the only thing identifying an organisation type inside
+   the matrix, so the dot needs 3:1 against the cell fill. Three of the six
+   supplied colours miss it: #E69F00 nonprofit 2.05:1, #56B4E9 foundation
+   2.10:1, #CC79A7 university 2.78:1 (#D55E00 startup 3.52, #009E73
+   corporation 3.11, #0072B2 government 4.71 pass). Every supplied hue is
+   kept exactly — a 1.5px inset rim at 40% ink gives each dot an edge of
+   4.37:1 or better against the cell fill, the card halo and the .hit fill.
+   The palette itself is Okabe-Ito, i.e. already CVD-safe. */
+.dot {
+  width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+  box-shadow: inset 0 0 0 1.5px rgba(20,20,15,.4), 0 0 0 1.5px var(--card), 0 1px 2px rgba(20,20,15,.28)
+}
+.cell-count { font-size: 9px; font-weight: 700; color: var(--muted); margin-left: 2px }
+
+/* ---- detail panel ---- */
+.panel {
+  max-width: 1180px; margin: 16px auto 0; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--card); padding: 18px 20px; box-shadow: 0 1px 3px rgba(20,20,15,.05);
+  animation: rise .18s ease
+}
+@keyframes rise { from { opacity: 0; transform: translateY(4px) } to { opacity: 1; transform: translateY(0) } }
+/* The panel takes programmatic focus when it opens (see DetailPanel.svelte).
+   :focus-visible is not matched by programmatic focus in any current engine,
+   so this state is never painted; the rule exists so that if one ever does,
+   the indicator is deliberate rather than a UA ring clipped by the panel's
+   border-radius. */
+.panel:focus { outline: none }
+.panel:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px }
+.panel-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px }
+.panel-eyebrow { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700 }
+/* Now an <h3> (1.3.1, A): the detail panel had no heading at all, so a
+   screen reader had nothing to navigate to when it opened. Every
+   declaration here was already explicit, so the tag change is invisible. */
+.panel-title { font-size: 17px; font-weight: 600; line-height: 1.25; margin-top: 3px }
+/* The source built this title by concatenating a styled <span> into an
+   innerHTML string. It is now a structured list of runs; this is the class
+   that used to be the inline style. */
+.panel-title > span + span { margin-left: .35em }
+.panel-title .times { color: var(--faint); font-weight: 400 }
+.panel-sub { font-size: 11.5px; color: var(--muted); margin-top: 3px }
+.close-btn, .back-btn {
+  border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; font-size: 11.5px;
+  color: var(--muted); cursor: pointer; background: var(--card); flex-shrink: 0; font-family: inherit; display: inline-flex; align-items: center; gap: 4px
+}
+.close-btn:hover, .back-btn:hover { background: var(--hover); color: var(--ink) }
+
+/* cell mode: alumni roster */
+.roster { margin-top: 14px; display: flex; flex-direction: column }
+.alum-row {
+  display: flex; align-items: center; gap: 12px; padding: 9px 6px; border-top: 1px solid var(--line-soft);
+  cursor: pointer; border-radius: 8px; transition: background .1s;
+  width: 100%; text-align: left; background: none; border-left: none; border-right: none; border-bottom: none; font-family: inherit
+}
+.alum-row:hover { background: var(--accent-soft) }
+.alum-row:first-child { border-top: none }
+.avatar {
+  width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; color: #fff; font-size: 15px
+}
+.alum-main { flex: 1; min-width: 0 }
+.alum-name { font-size: 13px; font-weight: 600; color: var(--accent) }
+.alum-role { font-size: 11.5px; color: var(--muted); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.alum-meta { font-size: 10.5px; color: var(--faint); flex-shrink: 0; text-align: right }
+.alum-chev { color: var(--faint); font-size: 16px; flex-shrink: 0 }
+.roster-empty { padding: 18px 4px; color: var(--muted); font-size: 12.5px; font-style: italic }
+
+/* profile mode */
+.profile { margin-top: 6px }
+.profile-head { display: flex; align-items: flex-start; gap: 14px }
+.profile-avatar {
+  width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; color: #fff; font-size: 20px
+}
+/* Now an <h3> — see the note on .panel-title. */
+.profile-name { font-size: 19px; font-weight: 600; line-height: 1.15 }
+.profile-role { font-size: 13px; color: var(--ink); margin-top: 2px }
+.profile-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; align-items: center }
+.pbadge { font-size: 10.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); background: var(--paper) }
+.pbadge.org { display: inline-flex; align-items: center; gap: 5px }
+.pbadge.org .sw { width: 8px; height: 8px; border-radius: 50% }
+.profile-desc { font-size: 13px; color: #33322c; line-height: 1.6; margin-top: 14px; max-width: 70ch }
+.profile-section { margin-top: 16px }
+.ps-label { font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); font-weight: 700; margin-bottom: 7px }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip {
+  font-size: 11px; padding: 4px 10px; border-radius: 7px; background: var(--accent-soft); color: var(--accent);
+  border: 1px solid var(--accent-line); font-weight: 500
+}
+.chip.fn { background: #f0eee6; color: #54524a; border-color: var(--line) }
+.profile-actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap }
+.li-btn {
+  display: inline-flex; align-items: center; gap: 7px; background: var(--accent); color: #fff; border: none;
+  border-radius: 9px; padding: 9px 15px; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; font-family: inherit
+}
+.li-btn:hover { background: #12508c }
+/* A11Y (WCAG 1.4.3, AA) — VISUAL CHANGE, needs sign-off. "No LinkedIn on
+   file" is a <span>, not a disabled control, so the inactive-component
+   exemption does not cover it. --faint on --line was 1.88:1; #5d5b55
+   reaches 4.57:1 on the same fill. */
+.li-btn.disabled { background: var(--line); color: #5d5b55; pointer-events: none }
+
+/* ---- data states (new; the static source had no fetch to fail) ---- */
+.state {
+  max-width: 1180px; margin: 0 auto; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--card); padding: 22px 20px
+}
+.state-title { font-size: 14px; font-weight: 600; color: var(--ink) }
+.state-body { font-size: 12.5px; color: var(--muted); margin-top: 6px; max-width: 70ch }
+.state.error { border-color: #c9a0a0 }
+.state.error .state-title { color: #8c2f2f }
+
+@media (max-width: 600px) {
+  :host, body { padding: 1.2rem 1rem 3rem }
+  .alum-meta { display: none }
+  .ce-title { font-size: 16px; letter-spacing: .1em }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important } }
