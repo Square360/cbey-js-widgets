@@ -15,6 +15,11 @@ export interface Sector {
 export interface Category {
   label: string;
   sub: string;
+  /**
+   * Derived server-side on every sync: true when no alum is placed in this
+   * row (no populated cell for the category). Not a fixed set, so it can
+   * change whenever the Airtable data does.
+   */
   future?: boolean;
 }
 

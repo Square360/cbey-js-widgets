@@ -78,7 +78,8 @@
       <tbody>
         <!--
           Every category gets a row, including categories no alum is placed
-          against (the supplied dataset has one: "Transportation"). The row
+          against (the payload flags these `future`; which rows they are
+          depends on the Airtable data at sync time). The row
           renders as nine empty cells rather than collapsing — an absent
           impact theme is information, and a missing row would silently
           renumber nothing but would read as a data error.

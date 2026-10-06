@@ -189,16 +189,22 @@ describe('matrix render', () => {
     expect(q('.count-pill')!.textContent).toBe('105 alumni');
   });
 
-  it('renders the unpopulated "Transportation" row without collapsing or erroring', async () => {
+  it('renders an unpopulated category row without collapsing or erroring', async () => {
     await mountWidget();
     const payload = fixture as unknown as AlumniPayload;
+    // `future` is derived server-side as "no populated cell in this row", so
+    // read the empty row from the fixture rather than naming it: the set
+    // changes whenever the Airtable data does (it is "Policy" today).
+    const empty = payload.categories.find((c) => c.future);
+    expect(empty).toBeDefined();
+    const label = empty!.label;
     // Guard the premise: nothing references this category.
     const referenced = Object.keys(payload.cellData).some((k) =>
-      k.startsWith('Transportation__'));
+      k.startsWith(`${label}__`));
     expect(referenced).toBe(false);
 
     const row = qa('tbody tr').find((tr) =>
-      tr.querySelector('.row-label')?.textContent?.startsWith('Transportation'));
+      tr.querySelector('.row-label')?.textContent?.startsWith(label));
     expect(row).toBeDefined();
     const cells = Array.from(row!.querySelectorAll('td.cell'));
     expect(cells.length).toBe(payload.sectors.length);
