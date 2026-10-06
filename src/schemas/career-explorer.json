@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cbey.yale.edu/schemas/career-explorer.json",
+  "title": "Career Explorer config",
+  "description": "Editor-supplied configuration for the career-explorer widget. The widget renders no bundled dataset: `endpoint` is required and everything it displays comes from that response.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["endpoint"],
+  "properties": {
+    "endpoint": {
+      "type": "string",
+      "description": "Same-origin path to the alumni JSON route served by the cbey_airtable module. Deliberately configuration rather than a constant in the bundle, so the widget can be pointed at a fixture and a route change needs no rebuild. Must be a root-relative path — an absolute URL would take the widget off-origin.",
+      "pattern": "^/[^\\s]*$",
+      "default": "/api/career-explorer/alumni"
+    },
+    "title": {
+      "type": "string",
+      "description": "Overrides the masthead heading. Leave unset for \"Yale Social Impact · Career Explorer\".",
+      "maxLength": 120
+    },
+    "intro": {
+      "type": "string",
+      "description": "Overrides the lead sentence of the standfirst. The live alumni count and the \"across N career paths\" clause that follow it are generated from the data and are not editable.",
+      "maxLength": 400
+    },
+    "lastUpdated": {
+      "type": "string",
+      "description": "Overrides the \"Last updated …\" line. Leave unset to show the date of the last successful Airtable sync; set to an empty string to hide the line entirely.",
+      "maxLength": 80
+    }
+  }
+}

@@ -1,38 +1,51 @@
 #!/usr/bin/env node
 /**
  * @file
- * Build a shared runtime bundle (React 18 for v1).
+ * Build a shared runtime bundle.
  *
  * Usage:
  *   node scripts/build-runtime.mjs react18
+ *   node scripts/build-runtime.mjs svelte5
  *
  * Output: dist/runtimes/{runtime}.bundle.js
  *
- * The output is a standalone IIFE bundle: it includes React, ReactDOM,
- * and react-dom/client, and assigns them to `window.CbeyReact` (for
- * react18). Atlas copies this file into cbey-d8 at:
+ * The output is a standalone IIFE bundle assigning the framework to a
+ * `window.Cbey*` global. Its source is src/runtimes/{runtime}/build-runtime.ts;
+ * see that directory's README for what each global exposes.
  *
- *   web/modules/custom/cbey_js_widgets/js/runtimes/react18.bundle.js
+ * The built file is copied into cbey-d8 at:
  *
- * so Drupal's `cbey_js_widgets/react18` library serves it from the
- * site's own origin. The widget bundles produced by `vite build`
- * externalise react / react-dom / react-dom/client and resolve them
- * to this global at runtime.
+ *   web/modules/custom/cbey_js_widgets/js/runtimes/{runtime}.bundle.js
+ *
+ * so the matching Drupal library serves it from the site's own origin.
+ *
+ * Whether widget bundles actually resolve against the global differs by
+ * runtime, and the difference is deliberate:
+ *
+ *   react18 — React is BUNDLED into each widget bundle (v1 decision).
+ *             This shared bundle is loaded but nothing resolves against
+ *             it yet. Left in place; externalising React is a separate
+ *             change to vite.config.ts.
+ *   svelte5 — widget bundles DO externalise against `window.CbeySvelte`.
+ *             See svelteRuntimeGlobal() in vite.config.ts. Because
+ *             `svelte/internal/client` is a private API surface, this
+ *             bundle and the widget bundles must be rebuilt together;
+ *             the widget-side shim warns on a version mismatch.
  */
 import { build } from 'vite';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { existsSync, mkdirSync, copyFileSync } from 'node:fs';
+import { existsSync, mkdirSync, copyFileSync, rmSync } from 'node:fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
 
 const runtime = process.argv[2] ?? 'react18';
 
-const KNOWN = new Set(['react18']);
+const KNOWN = new Set(['react18', 'svelte5']);
 if (!KNOWN.has(runtime)) {
   console.error(`[build-runtime] Unknown runtime "${runtime}".`);
-  console.error('  Supported: react18');
+  console.error(`  Supported: ${[...KNOWN].join(', ')}`);
   process.exit(1);
 }
 
@@ -89,7 +102,15 @@ await build({
   logLevel: 'info',
 });
 
-const tmpOut = resolve(repoRoot, `dist/runtimes/_tmp/${runtime}.bundle.js`);
+const tmpDir = resolve(repoRoot, 'dist/runtimes/_tmp');
+const tmpOut = resolve(tmpDir, `${runtime}.bundle.js`);
 const finalOut = resolve(outDir, `${runtime}.bundle.js`);
 copyFileSync(tmpOut, finalOut);
+
+// Vite needs its own outDir, so the bundle is built into dist/runtimes/_tmp
+// and copied up. Remove the staging dir afterwards: dist/ is committed and
+// ships as a type:drupal-library package, so anything left here is dead
+// weight installed on every site (the duplicate is ~97 KB).
+rmSync(tmpDir, { recursive: true, force: true });
+
 console.log(`[build-runtime] Wrote ${finalOut}`);

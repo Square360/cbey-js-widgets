@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # Types. `typecheck` runs tsc for .ts and svelte-check for .svelte —
+      # tsc alone cannot see inside a Svelte component.
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      # The only advisory gate that means anything here. Every package whose
+      # code reaches a browser is a production dependency; the dev tree is
+      # build tooling that never ships. A failure here is real exposure on a
+      # public page, so it stops the build. Dev-tree advisories are handled
+      # in maintenance passes, not by blocking every push.
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=low
+
+      # dist/ is committed, because nothing builds runtimes in CI and the
+      # Drupal side installs this package as a drupal-library. That makes a
+      # stale dist/ a real failure mode: edit a component, forget to rebuild,
+      # ship the old bundle. This rebuilds and fails if the result differs
+      # from what was committed.
+      - name: Build
+        run: npm run build
+
+      - name: Committed dist/ matches a fresh build
+        run: |
+          # manifest.json carries a publishedAt timestamp that changes every
+          # build; compare it with that key removed.
+          git diff --quiet -- dist ':!dist/manifest.json' || {
+            echo "::error::dist/ is stale — rebuild with 'npm run build' and commit the result."
+            git diff --stat -- dist ':!dist/manifest.json'
+            exit 1
+          }
+          node -e "
+            const {execSync} = require('child_process');
+            const strip = s => { const m = JSON.parse(s); delete m.publishedAt; return JSON.stringify(m, null, 2); };
+            const committed = strip(execSync('git show HEAD:dist/manifest.json').toString());
+            const built = strip(require('fs').readFileSync('dist/manifest.json', 'utf8'));
+            if (committed !== built) {
+              console.error('::error::dist/manifest.json is stale (ignoring publishedAt) — rebuild and commit.');
+              process.exit(1);
+            }
+          "
+
+      # The Svelte runtime and every Svelte widget bundle are version-locked
+      # against a private Svelte API, and the Drupal module serves its own
+      # copy of the runtime. A drifted copy there fails at runtime with an
+      # obscure error, so keep this check in mind when updating Svelte:
+      # cbey-d8/web/modules/custom/cbey_js_widgets/js/runtimes/svelte5.bundle.js
+      # must be replaced in the same change. It lives in another repo, so CI
+      # here cannot verify it.

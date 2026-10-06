@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-06-17T09:23:52.189Z",
+  "publishedAt": "2026-09-22T19:18:42.088Z",
   "supportedRuntimes": [
-    "react18"
+    "react18",
+    "svelte5"
   ],
   "widgets": [
     {
@@ -56,6 +57,19 @@
       "deprecated": false,
       "bundle": "dist/energy-storage-comparison-table/energy-storage-comparison-table.DlWvH6ZT.js",
       "styles": "dist/energy-storage-comparison-table/energy-storage-comparison-table.Ct5zsGBE.css"
+    },
+    {
+      "id": "career-explorer",
+      "label": "Career Explorer",
+      "description": "Matrix of Yale social-impact alumni plotted by IRIS+ impact theme against career function, with search, organisation-type filtering, row/column focus, and per-alum profiles. Data is fetched at runtime from the cbey_airtable JSON route.",
+      "version": "1.0.0",
+      "runtime": "svelte5",
+      "configSchema": {
+        "$ref": "schemas/career-explorer.json"
+      },
+      "deprecated": false,
+      "bundle": "dist/career-explorer/career-explorer.BscWpHeK.js",
+      "styles": "dist/career-explorer/career-explorer.Bgr3KPAW.css"
     }
   ]
 }
